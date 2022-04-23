@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Stealing Code—What All Software Engineering Students Should Know"
+subtitle: "And why staying in the introductory course frame of mind is actually stunting your growth as a programmer."
 author: brooke
 categories: [ software engineering, introductory, source code, java ]
 courses: [SWE-262P, SWE-265P]
