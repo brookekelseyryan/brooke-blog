@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Bored to Death: Why Working as a Software Engineer Nearly Cost Me My Life"
+subtitle: "The story of my first job out of college—unchecked, chronic boredom—and how backpacking, teaching, and an obsessive learning-binge on dog food helped bring me back from a dark time."
 author: brooke
 categories: [ neurodiversity, ADHD, software engineering, work ]
 courses: 
