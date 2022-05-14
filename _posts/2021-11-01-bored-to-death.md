@@ -7,6 +7,7 @@ categories: [ neurodiversity, ADHD, software engineering, work ]
 courses: 
 image: assets/images/student-stress.png
 triggers: suicidal thoughts, depression
+permalink: /blog/:title
 ---
 
 I'm often asked by my students how I wound up in grad school, and especially why I chose to come to academia when I had a prestigious, 6-figure job in tech right out of undergrad. Sometimes even my fellow grad students will ask me this question after I declare my goal is to one day become a professor—why not just go to industry where I'll make way *more* money doing "the same" work? 
