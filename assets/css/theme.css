@@ -36,6 +36,9 @@ a,a:hover {
 a {
 	color:#03a87c;
 }
+.a-dark {
+	color:#212529;
+}
 a.text-dark:hover {
 	color:#03a87c !important;
 }
