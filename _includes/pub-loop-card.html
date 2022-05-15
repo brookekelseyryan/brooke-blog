@@ -1,0 +1,38 @@
+<div class="mb-5 d-flex justify-content-between main-loop-card">
+    <div class="pr-3">
+        <h2 class="mb-1 h4 font-weight-bold">
+            <a class="text-dark" href="{{site.baseurl}}{{publication.filepath}}">{{ publication.title }}</a>
+        </h2>
+        <p>{{ publication.authors }}</p>
+        <p class="excerpt">
+            {{ publication.abstract  | strip_html | strip_newlines | truncate: 214}}
+        </p>
+        <small class="d-block text-muted">
+            {{ publication.conference }} <br>
+<!--            Keywords: <span class="catlist">-->
+<!--		{% for keyword in publication.keywords %}-->
+<!--		<a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/research/categories.html#{{ keyword | downcase }}">{{ keyword }}</a><span class="sep">, </span>-->
+<!--		{% endfor %}-->
+<!--		</span>-->
+        </small>
+        <div class="text-muted mt-1">
+            <span><a href="{{site.baseurl}}{{publication.filepath}}" class="btn  btn-lg btn-faicon-darkgrey"><i class="far fa-file-pdf "></i></a></span>
+
+            {% if publication.doi %}
+            <span><a href="{{publication.doi}}" class="btn  btn-lg btn-faicon-darkgrey"><i class="ai ai-doi "></i></a></span>
+            {% endif %}
+
+            {% if publication.bibtex %}
+            <span><a href="{{site.baseurl}}/research/pdf/Reading_to_Write_Ryan_22.pdf" class="btn  btn-lg btn-faicon-darkgrey"><i class="fas fa-quote-right fa-sm"></i></a></span>
+            {% endif %}
+
+        </div>
+    </div>
+    {% if publication.image %}
+    <div class="col-md-3 pr-0 text-right">
+        <a href="{{site.baseurl}}{{post.url}}">
+            <img class="w-100" src="{% if post.image contains "://" %}{{ publication.image }}{% else %}{{ site.baseurl }}/{{ publication.image }}{% endif %}" alt="{{ publication.title }}">
+        </a>
+    </div>
+    {% endif %}
+</div>
