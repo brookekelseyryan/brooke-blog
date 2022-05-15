@@ -35,17 +35,13 @@
 
         // If they scrolled down and are past the navbar, add class .nav-up.
         // This is necessary so you never see what is "behind" the navbar.
-        if (st > lastScrollTop && st > navbarHeight){
-            // Scroll Down            
-            $('nav').removeClass('nav-down').addClass('nav-up'); 
-            $('.nav-up').css('top', - $('nav').outerHeight() + 'px');
-           
+        if (st > navbarHeight){
+            // Scroll Down past navbar
+            $('nav').addClass('nav-up');
+
         } else {
-            // Scroll Up
-            if(st + $(window).height() < $(document).height()) {               
-                $('nav').removeClass('nav-up').addClass('nav-down');
-                $('.nav-up, .nav-down').css('top', '0px');             
-            }
+            // Scroll Up to navbar 
+                $('nav').removeClass('nav-up');
         }
 
         lastScrollTop = st;
