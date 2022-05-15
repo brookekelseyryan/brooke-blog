@@ -1,0 +1,39 @@
+---
+title: "Research"
+layout: default
+pagination:
+enabled: true
+permalink: "/research/"
+---
+
+<!-- Now the rest of the posts with the usual loop but with an offset:4 on the first page so we can skeep the first 4 posts displayed above -->
+<div class="container">
+
+<!--    <div class="row mt-3">-->
+
+<!--        <div class="col-md-8 main-loop">-->
+
+<!--    TODO This is where I'll put my research statement and stuff-->
+<!--    <div class="row align-items-center ">-->
+<!--        <div class="col-md-12">-->
+<!--            <h2 class="font-weight-bold">Research Statement</h2>-->
+<!--            <p><a href="{{ site.authors.brooke.site }}">{{ site.authors.brooke.site }}</a></p>-->
+<!--            <p class="excerpt">-->
+
+<!--            <br><br><br>-->
+<!--            </p>-->
+<!--        </div>-->
+<!--    </div>-->
+
+    <h4 class="font-weight-bold spanborder"><span>Publications</span></h4>
+
+            {% for publication in site.publications %}
+
+            {% include pub-loop-card.html %}
+
+            {% endfor %}
+
+
+
+
+</div>
