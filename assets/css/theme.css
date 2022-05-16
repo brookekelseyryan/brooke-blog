@@ -16,6 +16,9 @@ body {
 img {
 	max-width:100%;
 }
+.article-img {
+	max-width: 700px;
+}
 .tofront {
 	position:relative;
 	z-index:1;
@@ -32,6 +35,9 @@ a,a:hover {
 }
 a {
 	color:#03a87c;
+}
+.a-dark {
+	color:#212529;
 }
 a.text-dark:hover {
 	color:#03a87c !important;
@@ -220,6 +226,9 @@ a.text-dark:hover {
 	margin-right:2rem;
 	font-size:1.55rem;
     font-family:"Georgia","Times New Roman",serif;
+}
+.nav-up{
+	box-shadow:0 -3px 10px 0 rgba(0,0,0,.0785);
 }
 .dropdown-item {
 	font-weight:400;
