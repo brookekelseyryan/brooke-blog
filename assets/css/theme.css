@@ -39,6 +39,9 @@ a {
 .a-dark {
 	color:#212529;
 }
+.a-darkgrey {
+	color:#696969;
+}
 a.text-dark:hover {
 	color:#03a87c !important;
 }
@@ -895,4 +898,10 @@ div.a2a_full_footer {display:none;}
 		 height:280px !Important;
 	 }
  }
- 
+
+iframe.youtube {
+	aspect-ratio: 16 / 9;
+	height: 100%;
+	width: 100%;
+}
+
