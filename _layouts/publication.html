@@ -26,10 +26,13 @@ layout: default
 					{% include icons.html %}
 				</div>
 				<div class="h-100">
-					<div class="row {% if page.image %} justify-content-between {% else %} justify-content-center {% endif %}">
-						<!--				{% if page.triggers %}-->
-						<!--				<p class="excerpt" style="font-style: italic">Trigger warnings: {{ page.triggers }}</p>-->
-						<!--				{% endif %}-->
+					<!-- Tags -->
+					<div class="mb-4">
+				<span class="taglist">
+				{% for tag in page.tags %}
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/research/tags.html#{{ tag | replace: " ","-" }}">{{ tag }}</a>
+					{% endfor %}
+				</span>
 					</div>
 				</div>
 			</div>
@@ -69,30 +72,38 @@ layout: default
 			</article>
 
 
-			<!-- Tags -->
-			<div class="mb-4">
-				<span class="taglist">
-				{% for tag in page.tags %}
-				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/research/tags.html#{{ tag | replace: " ","-" }}">{{ tag | downcase }}</a>
-				{% endfor %}
-				</span>
-			</div>
 
 
+			<!-- Mailchimp Subscribe Form -->
+			{% if page.comments != false %}
+			{% if site.mailchimp-list %}
+			<div class="border p-5 bg-lightblue">
+				<div class="row justify-content-between">
+					<div class="col-md-6 mb-2 mb-md-0">
+						<h5 class="font-weight-bold">Join My Newsletter <img src="{{ site.baseurl }}/assets/images/brooke_ghostie.png" width="30" alt="{{site.title}}"></h5>
+						Support my mission to make Computer Science fun and accessible for all. It helps grow the blog, and I'll never spam!
+					</div>
+					<div class="col-md-6">
+						<div class="row">
+							<form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate w-100" target="_blank" novalidate>
+								<div class="mc-field-group">
 
-			<!-- Author Box -->
-			{% if page.author %}
-			<div class="row mt-5">
-				<div class="col-md-2 align-self-center">
-					{% if author.avatar %}
-					<img class="rounded-circle" src="{{site.baseurl}}/{{author.avatar}}" alt="{{author.name}}" width="90"/>
-					{% endif %}
+									<input type="email" placeholder="Enter e-mail address" name="EMAIL" class="required email form-control w-100" id="mce-EMAIL" autocomplete="on" required>
+
+
+									<button type="submit" value="Subscribe" name="subscribe" class="heart btn btn-brooke btn-block w-100 mt-2">Subscribe</button>
+
+								</div>
+							</form>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-10">
-					<h5 class="font-weight-bold">Written by {{ author.name }} {% if author.twitter %}<span><a target="_blank" href="{{ author.twitter }}" class="btn btn-outline-success btn-sm btn-round ml-2">Follow</a></span>{% endif %}</h5>
-					{{ author.bio }}
-				</div>
 			</div>
+			{% endif %}
+
+			<!-- Comments -->
+
+			{% include comments.html %}
 			{% endif %}
 
 
