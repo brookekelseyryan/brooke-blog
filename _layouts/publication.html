@@ -19,13 +19,7 @@ layout: default
 					{% endif %}
 				</div>
 				<div class="col-md-12 pl-0 pr-0 pr-md-4 pt-4 pb-4 align-self-center">
-					<!--					<p class="text-uppercase font-weight-bold">-->
-					<!--                        <span class="catlist">-->
-					<!--						{% for category in page.categories %}-->
-					<!--                          <a class="sscroll text-danger" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category | downcase }}</a><span class="sep">, </span>-->
-					<!--                        {% endfor %}-->
-					<!--                        </span>-->
-					<!--					</p>-->
+
 					<div class="d-flex align-items-center">
 						<h6 class="text-muted">{{page.venue}}</h6>
 					</div>
@@ -79,7 +73,7 @@ layout: default
 			<div class="mb-4">
 				<span class="taglist">
 				{% for tag in page.tags %}
-				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/tags.html#{{ tag | downcase }}">{{ tag | downcase }}</a>
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/research/tags.html#{{ tag | replace: " ","-" }}">{{ tag | downcase }}</a>
 				{% endfor %}
 				</span>
 			</div>

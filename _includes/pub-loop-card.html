@@ -9,15 +9,15 @@
         </p>
         <small class="d-block text-muted">
             {{ page.venue }} <br>
-<!--            Keywords: <span class="catlist">-->
-<!--		{% for keyword in publication.keywords %}-->
-<!--		<a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/research/categories.html#{{ keyword | downcase }}">{{ keyword }}</a><span class="sep">, </span>-->
-<!--		{% endfor %}-->
-<!--		</span>-->
         </small>
-        <div class="text-muted mt-1">
+        <div class="text-muted mt-1 mb-1">
             {% include icons.html %}
         </div>
+        <span class="taglist">
+        {% for tag in page.tags %}
+        <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/research/tags.html#{{ tag | replace: " ","-" }}">{{ tag | downcase }}</a>
+        {% endfor %}
+    </span>
     </div>
     {% if page.thumbnail %}
     <div class="col-md-3 pr-0 text-right">
