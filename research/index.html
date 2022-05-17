@@ -35,7 +35,10 @@ permalink: "/research/"
 
     <h4 class="font-weight-bold spanborder"><span>Projects</span></h4>
 
-    {% for page in site.projects %}
+<!--    change to | reverse for most recent first -->
+    {% assign projs = site.projects | sort: 'date' %}
+
+    {% for page in projs %}
 
     {% include pub-loop-card.html %}
 

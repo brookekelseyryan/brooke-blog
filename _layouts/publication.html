@@ -26,10 +26,13 @@ layout: default
 					{% include icons.html %}
 				</div>
 				<div class="h-100">
-					<div class="row {% if page.image %} justify-content-between {% else %} justify-content-center {% endif %}">
-						<!--				{% if page.triggers %}-->
-						<!--				<p class="excerpt" style="font-style: italic">Trigger warnings: {{ page.triggers }}</p>-->
-						<!--				{% endif %}-->
+					<!-- Tags -->
+					<div class="mb-4">
+				<span class="taglist">
+				{% for tag in page.tags %}
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/research/tags.html#{{ tag | replace: " ","-" }}">{{ tag }}</a>
+					{% endfor %}
+				</span>
 					</div>
 				</div>
 			</div>
@@ -69,16 +72,10 @@ layout: default
 			</article>
 
 
-			<!-- Tags -->
-			<div class="mb-4">
-				<span class="taglist">
-				{% for tag in page.tags %}
-				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/research/tags.html#{{ tag | replace: " ","-" }}">{{ tag | downcase }}</a>
-				{% endfor %}
-				</span>
-			</div>
+
 
 			<!-- Mailchimp Subscribe Form -->
+			{% if page.comments != false %}
 			{% if site.mailchimp-list %}
 			<div class="border p-5 bg-lightblue">
 				<div class="row justify-content-between">
@@ -104,23 +101,8 @@ layout: default
 			</div>
 			{% endif %}
 
-			<!-- Author Box -->
-			{% if page.author %}
-			<div class="row mt-5">
-				<div class="col-md-2 align-self-center">
-					{% if author.avatar %}
-					<img class="rounded-circle" src="{{site.baseurl}}/{{author.avatar}}" alt="{{author.name}}" width="90"/>
-					{% endif %}
-				</div>
-				<div class="col-md-10">
-					<h5 class="font-weight-bold">Written by {{ author.name }} {% if author.twitter %}<span><a target="_blank" href="{{ author.twitter }}" class="btn btn-outline-success btn-sm btn-round ml-2">Follow</a></span>{% endif %}</h5>
-					{{ author.bio }}
-				</div>
-			</div>
-			{% endif %}
-
 			<!-- Comments -->
-			{% if page.comments != false %}
+
 			{% include comments.html %}
 			{% endif %}
 
