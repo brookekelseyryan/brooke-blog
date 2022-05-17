@@ -90,8 +90,8 @@ layout: default
 			<div class="border p-5 bg-lightblue">
 				<div class="row justify-content-between">
 					<div class="col-md-6 mb-2 mb-md-0">
-						<h5 class="font-weight-bold">Join Newsletter</h5>
-						 Get the latest news right in your inbox. We never spam!
+						<h5 class="font-weight-bold">Join My Newsletter <img src="{{ site.baseurl }}/assets/images/brooke_ghostie.png" width="30" alt="{{site.title}}"></h5>
+						 Support my mission to make Computer Science fun and accessible for all. It helps grow the blog, and I'll never spam!
 					</div>
 					<div class="col-md-6">
 						<div class="row">
@@ -101,7 +101,7 @@ layout: default
 								<input type="email" placeholder="Enter e-mail address" name="EMAIL" class="required email form-control w-100" id="mce-EMAIL" autocomplete="on" required>
 							
 							
-								<button type="submit" value="Subscribe" name="subscribe" class="heart btn btn-success btn-block w-100 mt-2">Subscribe</button>
+								<button type="submit" value="Subscribe" name="subscribe" class="heart btn btn-brooke btn-block w-100 mt-2">Subscribe</button>
 							
                             </div>
                             </form>
@@ -139,22 +139,20 @@ layout: default
 </div>
 
 
-<!-- Aletbar Prev/Next -->
+<!-- Bottom Alert Bar
+================================================== -->
 <div class="alertbar">
-    <div class="container">
-        <div class="row prevnextlinks small font-weight-bold">
-          {% if page.previous.url %}
-            <div class="col-md-6 rightborder pl-0">
-                <a class="text-dark" href="{{ site.baseurl }}{{ page.previous.url }}">{% if page.previous.image %} <img height="30px" class="mr-1" src="{{site.baseurl}}/{{page.previous.image}}"> {% endif %} {{page.previous.title}}</a>
-            </div>
-          {% endif %}
-          {% if page.next.url %}
-            <div class="col-md-6 text-right pr-0">
-                <a class="text-dark" href="{{ site.baseurl }}{{ page.next.url }}"> {{page.next.title}} {% if page.next.image %} <img height="30px" class="ml-1" src="{{site.baseurl}}/{{page.next.image}}"> {% endif %}</a>
-            </div>
-          {% endif %}
-        </div>
-    </div>
-<!--</div>-->
+	<div class="container text-center">
+		<span><img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}"> &nbsp; Help make <b>science</b> fun for all, subscribe to support my blog </span>
+		<form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
+			<div class="mc-field-group">
+				<input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
+				<input type="submit" value="Subscribe" name="subscribe" class="heart">
+			</div>
+		</form>
+	</div>
+</div>
+
+
 
 </div>
