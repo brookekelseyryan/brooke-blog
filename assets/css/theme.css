@@ -34,13 +34,16 @@ a,a:hover {
 	text-decoration:none;
 }
 a {
-	color:#03a87c;
+	color:#805A63;
 }
 .a-dark {
 	color:#212529;
 }
+.a-darkgrey {
+	color:#696969;
+}
 a.text-dark:hover {
-	color:#03a87c !important;
+	color:#805A63 !important;
 }
 .c-pointer:hover {
 	cursor:pointer;
@@ -772,22 +775,65 @@ course h1,course h2,course h3,course h4,course h5,course h6,course .h1,course .h
 	font-weight:375;
 	font-family:Georgia,Times,"Times New Roman",serif;
 }
-
-
 .alertbar {
-	box-shadow:0 -3px 10px 0 rgba(0,0,0,.0785);
-	position:fixed;
-	bottom:0;
-	left:0;
-	background-color:#fff;
-	width:100%;
-	padding:20px 0;
-	z-index:1021;
-	display:none;
+	box-shadow: 0 -3px 10px 0 rgba(0, 0, 0, .0785);
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	width: 100%;
+	padding: 14px 0;
+	z-index: 1;
+	display: none;
 }
-.alertbar img {
-	border-radius:2px;
+
+.alertbar form {
+	display: inline-block;
 }
+
+.alertbar input[type="email"] {
+	font-size: 0.85rem;
+	padding: 3px 5px 3px 10px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border: 1px solid #ddd;
+	border-right: 0;
+	margin-right: -10px;
+	height: 34px;
+	letter-spacing: 0.5px;
+	margin-left: 5px;
+}
+
+.alertbar input[type="submit"] {
+	background-color: #3C2F36;
+	border: 1px solid #3C2F36;
+	color: rgba(255, 255, 255, 1);
+	fill: rgba(255, 255, 255, 1);
+	font-size: 0.85rem;
+	border-radius: 0;
+	padding: 4px 10px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	font-weight: 600;
+	height: 34px;
+	letter-spacing: 0.5px;
+	cursor: pointer;
+}
+
+/*.alertbar {*/
+/*	box-shadow:0 -3px 10px 0 rgba(0,0,0,.0785);*/
+/*	position:fixed;*/
+/*	bottom:0;*/
+/*	left:0;*/
+/*	background-color:#fff;*/
+/*	width:100%;*/
+/*	padding:20px 0;*/
+/*	z-index:1021;*/
+/*	display:none;*/
+/*}*/
+/*.alertbar img {*/
+/*	border-radius:2px;*/
+/*}*/
 .spanborder {
 	border-bottom:1px solid #e8f3ec;
 	margin-bottom:2rem;
@@ -826,8 +872,34 @@ course h1,course h2,course h3,course h4,course h5,course h6,course .h1,course .h
 		font-size:22px;
 	}
 	.alertbar {
-		display: none !important;
+		position: relative !Important;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		box-shadow: none !Important;
+		padding-right: 14px !Important;
 	}
+	.alertbar form {
+		margin-top: 20px;
+	}
+
+	.alertbar span,
+	.alertbar form {
+		display: block;
+	}
+
+	.alertbar input[type="submit"] {
+		border-radius: 3px !Important;
+	}
+
+	.alertbar input[type="email"] {
+		margin-right: 0px !Important;
+		display: block;
+		border-right: 1px solid #ddd !Important;
+		margin-bottom: 10px;
+	}
+	/*.alertbar {*/
+	/*	display: none !important;*/
+	/*}*/
 }
 @media (min-width:992px) {
 	.a2a_default_style a {
@@ -895,4 +967,10 @@ div.a2a_full_footer {display:none;}
 		 height:280px !Important;
 	 }
  }
- 
+
+iframe.youtube {
+	aspect-ratio: 16 / 9;
+	height: 100%;
+	width: 100%;
+}
+

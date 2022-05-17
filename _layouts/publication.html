@@ -1,0 +1,106 @@
+---
+layout: default
+---
+{% assign author = site.authors[page.author] %}
+<div class="container">
+
+
+	<div class="container-lg pt-4 pb-4">
+		<div class="row justify-content-center">
+			<div class="col-md-12 col-lg-10">
+
+				<h1 class="display-4 mb-3 article-headline">{{ page.title }}</h1>
+				<h4 class="display-6 article-subtitle mb-4">{{ page.authors }}</h4>
+				<div class="pr-0 align-self-center">
+					{% if page.youtube %}
+					<iframe class="youtube" src="{{ page.youtube }}" title="{{ page.title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					{% elsif page.thumbnail %}
+					<img class="rounded " src="{% if page.thumbnail contains "://" %}{{ page.thumbnail }}{% else %}{{ site.baseurl }}/{{ page.thumbnail }}{% endif %}" alt="{{ page.title }}">
+					{% endif %}
+				</div>
+				<div class="col-md-12 pl-0 pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+
+					<div class="d-flex align-items-center">
+						<h6 class="text-muted">{{page.venue}}</h6>
+					</div>
+					{% include icons.html %}
+				</div>
+				<div class="h-100">
+					<div class="row {% if page.image %} justify-content-between {% else %} justify-content-center {% endif %}">
+						<!--				{% if page.triggers %}-->
+						<!--				<p class="excerpt" style="font-style: italic">Trigger warnings: {{ page.triggers }}</p>-->
+						<!--				{% endif %}-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--<div class="container-lg pt-4 pb-4">-->
+
+	<div class="row justify-content-center">
+
+		<!-- Share -->
+		<!--		<div class="col-lg-2 pr-4 mb-4 col-md-12">-->
+		<!--			<div class="sticky-top sticky-top-offset text-center">-->
+		<!--				<div class="text-muted">-->
+		<!--					Share this-->
+		<!--				</div>-->
+		<!--				<div class="share d-inline-block">-->
+		<!--					&lt;!&ndash; AddToAny BEGIN &ndash;&gt;-->
+		<!--					<div class="a2a_kit a2a_kit_size_32 a2a_default_style">-->
+		<!--						<a class="a2a_dd" href="https://www.addtoany.com/share"></a>-->
+		<!--						<a class="a2a_button_facebook"></a>-->
+		<!--						<a class="a2a_button_twitter"></a>-->
+		<!--					</div>-->
+		<!--					<script async src="https://static.addtoany.com/menu/page.js"></script>-->
+		<!--					&lt;!&ndash; AddToAny END &ndash;&gt;-->
+		<!--				</div>-->
+		<!--			</div>-->
+		<!--		</div>-->
+
+
+		<div class="col-md-12 col-lg-10">
+
+			<!-- Article -->
+			<article class="article-post">
+				{{ content }}
+			</article>
+
+
+			<!-- Tags -->
+			<div class="mb-4">
+				<span class="taglist">
+				{% for tag in page.tags %}
+				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/research/tags.html#{{ tag | replace: " ","-" }}">{{ tag | downcase }}</a>
+				{% endfor %}
+				</span>
+			</div>
+
+
+
+			<!-- Author Box -->
+			{% if page.author %}
+			<div class="row mt-5">
+				<div class="col-md-2 align-self-center">
+					{% if author.avatar %}
+					<img class="rounded-circle" src="{{site.baseurl}}/{{author.avatar}}" alt="{{author.name}}" width="90"/>
+					{% endif %}
+				</div>
+				<div class="col-md-10">
+					<h5 class="font-weight-bold">Written by {{ author.name }} {% if author.twitter %}<span><a target="_blank" href="{{ author.twitter }}" class="btn btn-outline-success btn-sm btn-round ml-2">Follow</a></span>{% endif %}</h5>
+					{{ author.bio }}
+				</div>
+			</div>
+			{% endif %}
+
+
+
+		</div>
+
+
+	</div>
+</div>
+
+

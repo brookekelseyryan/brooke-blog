@@ -1769,6 +1769,29 @@ fieldset:disabled a.btn {
     .show > .btn-primary.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(3, 168, 124, 0.5); }
 
+.btn-brooke {
+  color: #fff;
+  background-color: #3C2F36;
+  border-color: #3C2F36; }
+.btn-primary:hover {
+  color: #fff;
+  background-color: #3C2F36;
+  border-color: #3C2F36; }
+.btn-primary:focus, .btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(3, 168, 124, 0.5); }
+.btn-primary.disabled, .btn-primary:disabled {
+  color: #fff;
+  background-color: #3C2F36;
+  border-color: #3C2F36; }
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #3C2F36;
+  border-color: #3C2F36; }
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(3, 168, 124, 0.5); }
+
 .btn-secondary {
   color: #fff;
   background-color: #7832e2;
@@ -2412,6 +2435,28 @@ fieldset:disabled a.btn {
     .btn-outline-gray:not(:disabled):not(.disabled):active:focus, .btn-outline-gray:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-gray.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(206, 212, 218, 0.5); }
+
+.btn-outline-darkgrey {
+  color: #FFFFFF;
+  background-color: #696969;
+  border-color: #696969; }
+.btn-outline-darkgrey:hover {
+  color: #FFFFFF;
+  background-color: #3c3036;
+  border-color: #3c3036; }
+.btn-outline-darkgrey:focus, .btn-outline-darkgrey.focus {
+  box-shadow: 0 0 0 0.2rem rgb(105, 105, 105); }
+.btn-outline-darkgrey.disabled, .btn-outline-darkgrey:disabled {
+  color: #ced4da;
+  background-color: transparent; }
+.btn-outline-darkgrey:not(:disabled):not(.disabled):active, .btn-outline-darkgrey:not(:disabled):not(.disabled).active,
+.show > .btn-outline-darkgrey.dropdown-toggle {
+  color: #FFFFFF;
+  background-color: #212529;
+  border-color: #212529; }
+.btn-outline-darkgrey:not(:disabled):not(.disabled):active:focus, .btn-outline-darkgrey:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-darkgrey.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(206, 212, 218, 0.5); }
 
 .btn-outline-indigo {
   color: #502c6c;
