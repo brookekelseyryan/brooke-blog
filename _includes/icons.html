@@ -16,6 +16,11 @@
 <span><a href="{{page.doi}}" class="btn  btn-lg btn-faicon-darkgrey"><i class="ai ai-doi "></i></a></span>
 {% endif %}
 
+{% if page.experiments %}
+<span><a href="{{page.experiments}}" class="btn  btn-lg btn-faicon-darkgrey"><i class="fas fa-flask"></i></a></span>
+{% endif %}
+
 {% if page.bibtex %}
 <span class="small btn btn-outline-darkgrey btn-sm btn-round"><a-darkgrey href="{{ site.authors.brooke.twitter }}">BibTex</a-darkgrey></span>
 {% endif %}
+

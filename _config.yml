@@ -89,6 +89,8 @@ authors:
 collections:
   publications:
     output: true
+  projects:
+    output: true
 
 # Defaults
 defaults:

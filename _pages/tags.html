@@ -6,11 +6,15 @@ permalink: "/research/tags.html"
 
 <div class="container">
 <!--        <h1 class="font-weight-bold title h6 text-uppercase mb-4">Tags</h1>-->
-            {% assign tags =  site.publications | map: 'tags' | join: ','  | split: ',' | uniq %}
+            {% assign tags1 =  site.publications | map: 'tags' | join: ','  | split: ',' | uniq %}
+            {% assign tags2 = site.projects | map: 'tags' | join: ','  | split: ',' | uniq %}
+            {% assign tags = tags1 | concat: tags2 | uniq %}
             {% for tag in tags %}
-        <h4 class="tag font-weight-bold spanborder text-capitalize" id="{{ tag | replace: " ","-" }}"><span>Publications tagged '{{ tag }}'</span></h4>
+        <h4 class="tag font-weight-bold spanborder text-capitalize" id="{{ tag | replace: " ","-" }}"><span>Research tagged '{{ tag }}'</span></h4>
 
-        {% assign pages_list = site.publications | where: "tags", tag  %}
+        {% assign pages_list1 = site.publications | where: "tags", tag  %}
+        {% assign pages_list2 = site.projects | where: "tags", tag  %}
+        {% assign pages_list = pages_list1 | concat: pages_list2 %}
         {% for page in pages_list %}
         {% if page.title != null %}
           {% if group == null or group == post.group %}

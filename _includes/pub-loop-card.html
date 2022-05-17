@@ -7,8 +7,14 @@
         <p class="excerpt">
             {{ page.abstract  | strip_html | strip_newlines | truncate: 214}}
         </p>
+
         <small class="d-block text-muted">
-            {{ page.venue }} <br>
+            {% if page.venue %}
+            {{ page.venue }}
+            {% else %}
+            {{ page.date | date: '%b %Y' }}
+            {% endif %}
+            <br>
         </small>
         <div class="text-muted mt-1 mb-1">
             {% include icons.html %}
