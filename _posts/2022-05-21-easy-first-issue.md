@@ -18,8 +18,12 @@ So, I'm writing this post for an audience similar to our student cohort in the P
 
 The open source project I'm going to be using to walk through is [Tensorflow](https://github.com/tensorflow/tensorflow). It's an open-source library for Deep Learning that is written mostly in C++ and is maintained by Google. If that sounds super scary, don't worry---I'm using this as the example project mainly because of the abundance of activity the project has so that I can demonstrate various scenarios you may encounter. Even if you are working in a project that is a completely different language or product, all these same tips should still apply.
 
-[![](/assets/images/easy-first-issue-post/tensorflow.png)](https://github.com/tensorflow/tensorflow)
-*TensorFlow GitHub project page*
+<figure>
+  <img class="border"
+  src="/assets/images/easy-first-issue-post/tensorflow.png"
+  alt="TensorFlow GitHub project page.">
+  <figcaption>TensorFlow GitHub project <a href="https://github.com/tensorflow/tensorflow">page</a>.</figcaption>
+</figure>
 
 # Why do we need to vet the issues at all?
 
@@ -31,12 +35,24 @@ It can be hard, I think, for newcomers to open-source to understand this. When y
 
 ## Bad Issue Example 1: An Angry Customer
 
-[![](/assets/images/easy-first-issue-post/1st_class_windows_support.png)](https://github.com/tensorflow/tensorflow/issues/77)
+<figure>
+  <img class="border"
+  src="/assets/images/easy-first-issue-post/1st_class_windows_support.png"
+  alt="Tensorflow issue 77">
+  <figcaption>TensorFlow <a href="https://github.com/tensorflow/tensorflow/issues/77">issue #77</a>.</figcaption>
+</figure>
+
 Here's an example that made me chuckle. This individual is demanding "1st class windows support" be provided. This is obviously an example of something that cannot actually be coded up in the scope of a simple GitHub issue, but perhaps was an individual airing their greivances in a misguided forum. Maybe instead of GitHub, they could have found the TensorFlow customer support page?
 
 ## Bad Issue Example 2: Red Alert! Unrelated webpage down! 
 
-[![](/assets/images/easy-first-issue-post/Yann_webpage_down.png)](https://github.com/tensorflow/tensorflow/issues/209)
+<figure>
+  <img class="border"
+  src="/assets/images/easy-first-issue-post/Yann_webpage_down.png"
+  alt="Tensorflow issue 209">
+  <figcaption>TensorFlow <a href="https://github.com/tensorflow/tensorflow/issues/209">issue #209</a>.</figcaption>
+</figure>
+
 Red alert! The personal webpage for a professor is **DOWN**! 
 
 Now, I'm not being *entirely* fair putting this in the bad issue section. For context, Yann LeCun is a professor of Computer Science, and he is one of the original creators of the MNIST database, which is an important database that TensorFlow gives their users access to. At least as of this writing, there *are* examples of [TensorFlow's official documentation](https://www.tensorflow.org/datasets/catalog/mnist) pointing to the dataset hosted on Professor LeCun's webpage. 
@@ -45,14 +61,23 @@ Despite the relevancy of this webpage to the TensorFlow project, this is *not* a
 
 ## Bad Issue Example 3: "Good First Issue" that is actually mega-hard
 
-[![](/assets/images/easy-first-issue-post/hard.png)](https://github.com/tensorflow/tensorflow/issues/22926)
+<figure>
+  <img class="border"
+  src="/assets/images/easy-first-issue-post/hard.png"
+  alt="Tensorflow issue 22926">
+  <figcaption>TensorFlow <a href="https://github.com/tensorflow/tensorflow/issues/22926">issue #22926</a>.</figcaption>
+</figure>
+
 At first glance, its not really obvious why this issue belongs in this list. This issue (as of the time of writing), is actually *still* open on the TensorFlow page. For an issue to be open for nearly *4 years* is almost unheard of in the fast-paced world of open-source. 
 
 As we scroll down perusing the comments on this issue, we find lots of moderators and experienced developers trying to gain more context about how to both understand and reproduce the issue---a critical component we'll discuss more later on. 
 
 About halfway through the comments, we stumble upon a comment from a user @Gomesz785 that aptly summarizes the theme here: 
-[![](/assets/images/easy-first-issue-post/comments.png)](https://github.com/tensorflow/tensorflow/issues/22926#issuecomment-920594088)
-*The TLDR: A good Samaritan user warns newcomers that despite the "good first issue" label, this is actually a "god-level" issue.*
+<figure>
+  <img class="border"
+  src="/assets/images/easy-first-issue-post/comments.png">
+  <figcaption>TLDR: A <a href="https://github.com/tensorflow/tensorflow/issues/22926#issuecomment-920594088">good Samaritan user warns newcomers</a> that despite the "good first issue" label, this is actually a "god-level" issue.</figcaption>
+</figure>
 
 Silly examples aside, this is actually my favorite example because it really drives home the true reason why we can't always just "trust" minimal filtering of issues. 
 
@@ -74,8 +99,11 @@ In this section, I'm going to outline a heuristic for finding a suitable easy is
 ## Documentation: The Information Kiosk of Open-Source
 I like to think of documentation in an open-source GitHub project as the equivalent of the Information Kiosk or Customer Service desk. This is the easy, no-brainer, first-stop we're going to to get some information. Are they always 100% right? Certainly not, we can all think of examples where Customer Service has given us well-intended, but ultimately misguided information about how to proceed on a given topic. But usually, the Information Kiosk is going to have the latest company-provided information on a variety of different topics. 
 
-[![](/assets/images/easy-first-issue-post/kiosk.png)](https://www.reddit.com/r/rct/comments/fet3al/i_made_information_kiosk_blender_3d/)
-*Information kiosk from one of my favorite childhood games, Rollercoaster Tycoon. (From Reddit, linked in image.)*
+<figure>
+  <img class="border"
+  src="/assets/images/easy-first-issue-post/kiosk.png">
+  <figcaption>Information kiosk from one of my favorite childhood games, Rollercoaster Tycoon. <a href="https://www.reddit.com/r/rct/comments/fet3al/i_made_information_kiosk_blender_3d/">From Reddit</a></figcaption>
+</figure>
 
 In TensorFlow, and in many open-source projects, the guidelines for contributors can be found in a doc titled `CONTRIBUTING.md`. Taking a look at the below snippet from the [Contribution doc for TensorFlow](https://github.com/tensorflow/tensorflow/blob/master/CONTRIBUTING.md#contributing-code):
 
@@ -103,8 +131,11 @@ An "easy bug" does not necessarily mean that its easy to fix. In this context, a
 
 So, an "easy bug" in this case is really easy to spot and reproduce on your machine. How difficult it actually is to fix is something that you can try to decipher by reading the comments for the given issue, and mostly by working on the bug itself.  
 
-[![](/assets/images/easy-first-issue-post/mrkrab.jpeg)](https://www.youtube.com/watch?v=8t6ipgd8JmU)
-*Mr. Krabs and his elusive white whale, Moby Dollar.*
+<figure>
+  <img class="border"
+  src="/assets/images/easy-first-issue-post/mrkrab.jpeg">
+  <figcaption>Mr. Krabs and his elusive white whale, Moby Dollar. <a href="https://www.youtube.com/watch?v=8t6ipgd8JmU">From YouTube</a></figcaption>
+</figure>
 
 A quick and dirty way to find bugs is to simply use the label for it in GitHub. Usually, its titled "Bugs", or something like that. In TensorFlow, its actually titled "type:bug." 
 
