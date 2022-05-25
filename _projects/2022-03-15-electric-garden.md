@@ -2,7 +2,7 @@
 layout: publication
 title:  "The Electric Garden/ El Jardín Eléctrico"
 authors: <b>Brooke K. Ryan</b>* and Mayra Cortez*
-venue: Advised by <a class="text-dark" href="http://www.kpeppler.com/">Professor Kylie Peppler</a>, 2022
+venue: Advised by <a href="http://www.kpeppler.com/">Professor Kylie Peppler</a>; 2022
 thumbnail: assets/images/the_electric_garden/electric_exhibit.jpg
 pdf: "/research/projects/Machine_Visual_Acuity_Ryan_21.pdf"
 permalink: "/research/the-electric-garden.html"
@@ -28,10 +28,14 @@ grounding of theory, a blending of both the scientific and the creative,
 upon which further projects of a similar vein may be explored in the
 future.
 
-![The initial presentation of The Electric Garden/ El Jardin Electrico
-exhibit during the Gallery Walk module in
-class.](/assets/images/the_electric_garden/electric_exhibit.jpg)
-*Figure 1: The initial presentation of The Electric Garden/ El Jardin Electrico exhibit during the Gallery Walk.*
+<figure>
+  <img class="border-0"
+  src="/assets/images/the_electric_garden/electric_exhibit.jpg"
+  alt="">
+  <figcaption>
+Figure 1: The initial presentation of The Electric Garden/ El Jardin Electrico exhibit during the Gallery Walk.
+</figcaption>
+</figure>
 
 ### Learning Goals
 
@@ -71,19 +75,28 @@ limited exposure to the electronics concepts is sufficient. We also seek
 to target audiences who have been traditionally underrepresented in
 engineering, including girls and Latinx children.
 
-![Selection of the narrative cards that were included with the exhibit.
-The full story video in both English and Spanish can be viewed
-[here](https://www.canva.com/design/DAE3KM-C4vM/5CTm0NvAIoXj1fgx45exxQ/watch?utm_content=DAE3KM-C4vM&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton).](/assets/images/the_electric_garden/page3.png)
-![Selection of the
-narrative cards that were included with the exhibit. The full story
-video in both English and Spanish can be viewed
-[here](https://www.canva.com/design/DAE3KM-C4vM/5CTm0NvAIoXj1fgx45exxQ/watch?utm_content=DAE3KM-C4vM&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton).](/assets/images/the_electric_garden/page5.png)
-![Selection of the
-narrative cards that were included with the exhibit. The full story
-video in both English and Spanish can be viewed
-[here](https://www.canva.com/design/DAE3KM-C4vM/5CTm0NvAIoXj1fgx45exxQ/watch?utm_content=DAE3KM-C4vM&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton).](/assets/images/the_electric_garden/page7.png)
-*Selection of the narrative cards that were included with the exhibit. The full story video in both English and Spanish can be viewed
-[here.](https://www.canva.com/design/DAE3KM-C4vM/5CTm0NvAIoXj1fgx45exxQ/watch?utm_content=DAE3KM-C4vM&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)*
+<figure>
+<div class="row">
+<div class="col-4">
+  <img class="border-0"
+  src="/assets/images/the_electric_garden/page3.png"
+  alt="">
+  </div>
+  <div class="col-4">
+  <img class="border-0"
+    src="/assets/images/the_electric_garden/page5.png"
+    alt="">
+    </div>
+    <div class="col-4">
+    <img class="border-0"
+      src="/assets/images/the_electric_garden/page7.png"
+      alt="">
+      </div>
+      </div>
+  <figcaption>
+Selection of narrative cards that were included with the exhibit. Full story video in both English and Spanish can be viewed <a href="https://www.canva.com/design/DAE3KM-C4vM/5CTm0NvAIoXj1fgx45exxQ/watch?utm_content=DAE3KM-C4vM&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton">here</a>.
+</figcaption>
+</figure>
 
 ### How to Use 
 
@@ -118,9 +131,23 @@ During class time in Week 5, we presented The Electric Garden to the
 class. We utilized the giant flowers that were produced by Kylie and the
 team in order to set the scene.
 
-![Fig](/assets/images/the_electric_garden/image1.jpg)
-![Fig](/assets/images/the_electric_garden/image2.jpg)
-*Figures 3a/3b: Implementing the circuit on the mushroom. The goal in this initial round of prototyping was to hold all the colors of the rainbow on each of the white spots.*
+<figure>
+<div class="row">
+<div class="col-6">
+  <img class="border-0"
+  src="/assets/images/the_electric_garden/image1.jpg"
+  alt="">
+  </div>
+  <div class="col-6">
+    <img class="border-0"
+    src="/assets/images/the_electric_garden/image2.jpg"
+    alt="">
+    </div>
+    </div>
+  <figcaption>
+Figures 3a/3b: Implementing the circuit on the mushroom. The goal in this initial round of prototyping was to hold all the colors of the rainbow on each of the white spots.
+</figcaption>
+</figure>
 
 We were really excited by the volume and creativity of ideas that our
 classmates contributed to the exhibit, which we discuss at length in the
@@ -131,11 +158,14 @@ discussed in the following section.
 
 ### Final Project Prototype
 
-![Design diagram for fairy ring/ mushroom lamp series circuit.
-Exhibit-goers will be able to connect the mushrooms in a fairy ring.
-Upon correctly wiring the mushrooms and the battery as shown, the
-mushrooms will light.](/assets/images/the_electric_garden/diagram.jpg)
-*Figure 4: Design diagram for fairy ring/ mushroom lamp series circuit. Exhibit-goers will be able to connect the mushrooms in a fairy ring. Upon correctly wiring the mushrooms and the battery as shown, the mushrooms will light.*
+<figure>
+  <img class="border-0"
+  src="/assets/images/the_electric_garden/diagram.jpg"
+  alt="">
+  <figcaption>
+Figure 4: Design diagram for fairy ring/ mushroom lamp series circuit. Exhibit-goers will be able to connect the mushrooms in a fairy ring. Upon correctly wiring the mushrooms and the battery as shown, the mushrooms will light.
+</figcaption>
+</figure>
 
 To address feedback from the initial round of prototyping in both the
 narrative aspects and presentation of scientific concepts, we decided to
@@ -271,16 +301,28 @@ plan to analyze this feedback and utilize it for building our next phase
 of designs. We've included this feedback in the Appendix of this report
 for further reading and future reference.
 
-![Final exhibit, with the 3D printed glowing mushroom prototypes,
-displayed during Week 10 of the course.
-](/assets/images/the_electric_garden/shroom_blue.jpg)
-![Final exhibit, with
-the 3D printed glowing mushroom prototypes, displayed during Week 10 of
-the course. ](/assets/images/the_electric_garden/shroom_green.jpg)
-![Final exhibit, with
-the 3D printed glowing mushroom prototypes, displayed during Week 10 of
-the course. ](/assets/images/the_electric_garden/shrooms_vertical.jpg)
-*Figures 5a-c: Final exhibit, with the 3D printed glowing mushroom prototypes, displayed during Week 10 of the course.*
+<figure>
+<div class="row">
+<div class="col-4">
+  <img class="border-0"
+  src="/assets/images/the_electric_garden/shroom_blue.jpg"
+  alt="">
+  </div>
+  <div class="col-4">
+  <img class="border-0"
+    src="/assets/images/the_electric_garden/shroom_green.jpg"
+    alt="">
+    </div>
+    <div class="col-4">
+    <img class="border-0"
+        src="/assets/images/the_electric_garden/shrooms_vertical.jpg"
+        alt="">
+        </div>
+  </div>
+  <figcaption>
+Figures 5a-c: Final exhibit, with the 3D printed glowing mushroom prototypes, displayed during Week 10 of the course.
+</figcaption>
+</figure>
 
 ### Final Project Gallery Walk Feedback
 

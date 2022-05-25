@@ -30,8 +30,12 @@ So what was Brooke doing during a typical sprint, 6 months into her tenure?
 
 Hunched over in my dimly-lit corner cubicle, this particular sprint, I was hard at work. Not exactly doing any bug fixes, or new feature requests, or really any programming at all. No, a task much more important than this had me absolutely fixated. I spent an entire two week period—the length of the an entire agile "sprint" in that company—researching the *best* dog food for my new puppy Henry. During our team's morning stand-up meetings, I literally would report imaginary roadblocks I was facing to justify why this task that was supposed to take a few hours was now taking the entire sprint: "Yeah, we gotta loop Mark down in IT on this one, this issue is looking a *lot* more complicated than we initially budgeted for." But really, "Mark in IT" was the author of a book on naturopathic dog food. I would scuffle back to my desk, anytime a senior teammate walked by I'd pull up the code I hadn't touched since it was assigned weeks ago, and go back to spending the *entire day* *researching dog food*. I did not get my work done at the end of the sprint, but I was now an expert on DIY raw natural dog food. Even after all this, Henry actually wouldn't be any better off either, I realized because of the time involved in implementing all the "best" methodologies (I could barely clean up my own plates after dinner, how the hell was I going to do it for a dog), this would be totally unrealistic to even attempt. Henry just eats kibble now. 
 
-![Picture of Henry](/assets/images/henry.jpeg)
-*My dog Henry and me at the beach*
+<figure>
+  <img class="border-0"
+  src="/assets/images/henry.jpeg"
+  alt="My dog Henry and me at the beach.">
+  <figcaption>My dog Henry and me at the beach.</figcaption>
+</figure>
 
 This cycle went on for nearly a *year*. Nine and a half days of dicking around at my desk, then the last half-day of the sprint when the literal fear of god and unemployment were in my veins that I would be able to have the energy to start on my tasks. And unsurprisingly, as probably any working software engineer can attest, tasks are almost *always* significantly more complicated and time-consuming than originally estimated, and often I'd have nothing completed at the end of a sprint. 
 
@@ -43,8 +47,12 @@ In my efforts to force myself to fit that neurotypical mold was when things beca
 
 Hearing myself think that, I left work, and went immediately to my doctor, who put me on a medical leave of absence. It took me about a year and a half after that dark, gray day to find what I *really* wanted to do. For a while, that was nothing. I was able to use the funds I'd saved from working that job to take time off to backpack. While I had no trouble with my resume getting interviews from more tech companies (I got flown up to Google during this period), the only job that remotely interested me was a summer teaching job I eventually I stumbled upon for Girls Who Code. By that time I'd committed to doing the John Muir Trail that August, so a seasonal gig was an accidental perfect fit for me at the time. 
 
-![Group photo from Girls Who Code](/assets/images/sip2019.jpeg)
-*Group picture from Summer 2019 with Girls Who Code*
+<figure>
+  <img class="border-0"
+  src="/assets/images/sip2019.jpeg"
+  alt="Group picture from Summer 2019 with Girls Who Code.">
+  <figcaption>Group picture from Summer 2019 with Girls Who Code.</figcaption>
+</figure>
 
 In my dreams at night along the trail, I recalled the joy I experienced teaching those girls that summer. I didn't have very good grades in college because of my undiagnosed ADHD—the last-minute cramming that'd gotten me A's in high school didn't work for me anymore with college-level programming assignments. I usually got Bs and Cs in my Computer Science classes, and so I never thought I'd be "good enough" to get into graduate school, a pre-requisite for teaching at the college level. My dreams along the JMT transported me to a time long before I thought I was inadqeuate to become a professor. 
 

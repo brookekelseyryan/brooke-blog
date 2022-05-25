@@ -18,7 +18,12 @@ Why is this?  Its not necessarily that Software shuns original, independent thin
 
 Take the [JSON-Java project](https://github.com/stleary/JSON-java), for instance.  Looking at their GitHub project page, this is a library that is used by *at least* **137,000** projects--and has a team of **41 developers** working on maintaining the code.  
 
-![JSON Java project](/assets/images/JSONJava.png)
+<figure>
+  <img class="border"
+  src="/assets/images/JSONJava.png"
+  alt="JSON Java.">
+  <figcaption> JSON Java <a href="https://github.com/stleary/JSON-java">GitHub project</a> contributors and users.</figcaption>
+</figure>
 
 Software is constantly evolving, new bugs appear as quickly as their predecessors squashed, dependencies are continuously updated—a project as large as this one is verified not only by the team of developers that maintain it, but by the hundreds of thousands of other open-source projects currently leveraging it successfully.  There's always a risk of bugs—but such a project will likely have infrastructure in place such as [Issue Tracking](https://github.com/stleary/JSON-java/issues) to capture and assess defects.  If there's a common operation to be performed in the scope of JSON parsing and processing, its likely been implemented, through several rounds of releases and testing, and is still being actively watched and maintained by this large development group.  Generally, this example demonstrates why we prefer to leverage existing libraries to writing our own completely from scratch.
 

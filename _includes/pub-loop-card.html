@@ -21,13 +21,13 @@
         </div>
         <span class="taglist">
         {% for tag in page.tags %}
-        <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/research/tags.html#{{ tag | replace: " ","-" }}">{{ tag }}</a>
+        <a class="no-a-hover sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/research/tags.html#{{ tag | replace: " ","-" }}">{{ tag }}</a>
         {% endfor %}
     </span>
     </div>
     {% if page.thumbnail %}
     <div class="col-md-3 pr-0 text-right">
-        <a href="{{site.baseurl}}{{post.url}}">
+        <a class="no-a-hover" href="{{site.baseurl}}{{post.url}}">
             <img class="w-100" src="{% if post.thumbnail contains "://" %}{{ page.thumbnail }}{% else %}{{ site.baseurl }}/{{ page.thumbnail }}{% endif %}" alt="{{ page.title }}">
         </a>
     </div>

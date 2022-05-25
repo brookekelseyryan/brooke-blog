@@ -146,14 +146,17 @@ sub {
 sup {
   top: -.5em; }
 
+
 a {
-  color: #03a87c;
+  color: inherit;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
-  a:hover {
-    color: #3c3036;
-    text-decoration: underline; }
+
+  a:not(.no-a-hover):hover {
+    filter: opacity(50%);
+    /*color: #3c3036;*/
+  }
 
 a:not([href]):not([tabindex]) {
   color: inherit;
@@ -163,6 +166,7 @@ a:not([href]):not([tabindex]) {
     text-decoration: none; }
   a:not([href]):not([tabindex]):focus {
     outline: 0; }
+
 
 pre,
 code,
@@ -1773,6 +1777,9 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #3C2F36;
   border-color: #3C2F36; }
+.btn-brooke:hover{
+  background-color: #2e2429;
+}
 .btn-primary:hover {
   color: #fff;
   background-color: #3C2F36;
