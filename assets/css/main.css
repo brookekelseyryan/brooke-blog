@@ -175,6 +175,7 @@ samp {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1em; }
 
+
 pre {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -447,6 +448,15 @@ code {
   word-break: break-word;
 }  a > code {
     color: inherit; }
+
+code.pre {
+  background: #f8f8f8;
+  padding: 10px;
+  font-size:14px;
+  display: block;
+  color: #212529;
+}  a > code {
+     color: inherit; }
 
 kbd {
   padding: 0.2rem 0.4rem;
@@ -2446,14 +2456,18 @@ fieldset:disabled a.btn {
 
 .btn-outline-darkgrey {
   color: #FFFFFF;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   background-color: #696969;
   border-color: #696969; }
 .btn-outline-darkgrey:hover {
   color: #FFFFFF;
-  background-color: #3c3036;
-  border-color: #3c3036; }
-.btn-outline-darkgrey:focus, .btn-outline-darkgrey.focus {
-  box-shadow: 0 0 0 0.2rem rgb(105, 105, 105); }
+  filter: opacity(50%);
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /*background-color: #3c3036;*/
+  /*border-color: #3c3036; */
+}
+/*.btn-outline-darkgrey:focus, .btn-outline-darkgrey.focus {*/
+/*  box-shadow: 0 0 0 0.2rem rgb(105, 105, 105); }*/
 .btn-outline-darkgrey.disabled, .btn-outline-darkgrey:disabled {
   color: #ced4da;
   background-color: transparent; }
@@ -4742,7 +4756,7 @@ button.close {
   left: 0;
   z-index: 1060;
   display: block;
-  max-width: 276px;
+  max-width: 500px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.6;
@@ -4861,7 +4875,7 @@ button.close {
 .popover-header {
   padding: 0.5rem 0.75rem;
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: inherit;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;

@@ -1,9 +1,11 @@
-<div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="mb-0 justify-content-between main-loop-card">
+    <div class="d-flex">
     <div class="pr-3">
         <h2 class="mb-1 h4 font-weight-bold">
             <a class="text-dark" href="{{site.baseurl}}{{page.permalink}}">{{ page.title }}</a>
         </h2>
         <p>{{ page.authors }}</p>
+
         <p class="excerpt">
             {{ page.abstract  | strip_html | strip_newlines | truncate: 186}}
         </p>
@@ -16,15 +18,11 @@
             {% endif %}
             <br>
         </small>
-        <div class="text-muted mt-1 mb-1">
-            {% include icons.html %}
-        </div>
-        <span class="taglist">
-        {% for tag in page.tags %}
-        <a class="no-a-hover sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/research/tags.html#{{ tag | replace: " ","-" }}">{{ tag }}</a>
-        {% endfor %}
-    </span>
+
+
+
     </div>
+
     {% if page.thumbnail %}
     <div class="col-md-3 pr-0 text-right">
         <a class="no-a-hover" href="{{site.baseurl}}{{post.url}}">
@@ -32,4 +30,13 @@
         </a>
     </div>
     {% endif %}
+</div>
+</div>
+
+<div class="mb-5">
+
+    <div class="text-muted mb-1">
+        {% include icons.html %}
+    </div>
+
 </div>
