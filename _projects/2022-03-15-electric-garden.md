@@ -7,6 +7,7 @@ thumbnail: assets/images/the_electric_garden/electric_exhibit.jpg
 pdf: "/research/projects/Machine_Visual_Acuity_Ryan_21.pdf"
 permalink: "/research/the-electric-garden.html"
 tags: [electronics, STEAM, education]
+uuid: electricgarden
 abstract: "What if we could leverage the inherent power of the collective
            imagination as a medium for integrating the arts and the sciences? This
            is the basic premise of The Electric Garden---the exploration of the

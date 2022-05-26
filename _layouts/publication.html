@@ -24,16 +24,19 @@ layout: default
 						<h6 class="text-muted">{{page.venue}}</h6>
 					</div>
 					{% include icons.html %}
-				</div>
-				<div class="h-100">
+
 					<!-- Tags -->
-					<div class="mb-4">
+					<div class>
 				<span class="taglist">
 				{% for tag in page.tags %}
 				  <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{{site.baseurl}}/research/tags.html#{{ tag | replace: " ","-" }}">{{ tag }}</a>
 					{% endfor %}
 				</span>
 					</div>
+
+				</div>
+				<div class="h-100">
+
 				</div>
 			</div>
 		</div>

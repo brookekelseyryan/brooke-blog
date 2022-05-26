@@ -9,6 +9,7 @@ slides: "/research/presentations/Machine_Visual_Acuity_Ryan_21.pdf"
 github: "https://github.com/brookekelseyryan/VisualAcuity"
 experiments: "https://wandb.ai/brookeryan/VisualAcuity/reports/Visual-Acuity-Progress-Report--Vmlldzo3NzkxMzk"
 permalink: "/research/machine-visual-acuity.html"
+uuid: machinevisualacuity
 tags: [deep learning, computer vision, biomedical imaging ]
 abstract: "In this project, we aim to gain insights about human visual acuity by applying these tests to machines. The main goal is to first train a convolutional-based neural network to recognize optotypes with low amounts of distortions so that it can use its knowledge to classify an unseen optotype from a testing set with optotypes with medium to high amounts of distortions. We used transfer learning, with the use of a VGG network, to obtain a baseline model for the problem. Then, we experimented with mixing the testing set with the training set, to determine if that could help the network make better predictions."
 ---
