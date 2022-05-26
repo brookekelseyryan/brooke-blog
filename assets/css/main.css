@@ -441,10 +441,11 @@ mark,
   color: #6c757d; }
 
 code {
-  font-size: 87.5%;
-  color: #ff0266;
-  word-break: break-word; }
-  a > code {
+  font-size: 1rem;
+  padding: 0.25rem;
+  background: #f8f8f8;
+  word-break: break-word;
+}  a > code {
     color: inherit; }
 
 kbd {
