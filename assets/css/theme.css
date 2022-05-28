@@ -116,14 +116,15 @@ a {
 .btn-faicon,.btn-group-faicon>.btn {
 	/*font-size:2rem;*/
 	padding:0.15rem .7rem;
-	color: #212529;
+	/*color: #212529;*/
+	color: #373A3E;
 	/*line-height:1.5;*/
 	/*border-radius:0.3rem;*/
 }
 .btn-faicon-darkgrey{
 	font-size:1.7rem;
 	padding:0.15rem .7rem;
-	color: #696969;
+	color: #797578;
 	/*line-height:1.5;*/
 	/*border-radius:0.3rem;*/
 }
