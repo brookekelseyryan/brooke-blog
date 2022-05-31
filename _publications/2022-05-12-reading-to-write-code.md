@@ -2,6 +2,7 @@
 layout: publication
 title:  "Reading to Write Code: An Experience Report of a Reverse Engineering and Modeling Course"
 authors: <b>Brooke Ryan</b>, <a class="text-dark" href="https://www.ics.uci.edu/~amezasor/">Adriana Meza Soria</a>, <a class="text-dark" href="https://kajdreef.com/">Kaj Dreef</a> and <a class="text-dark" href="https://www.ics.uci.edu/~andre/">André van der Hoek</a>
+authors_no_links: <b>Brooke Ryan</b>, Adriana Meza Soria, Kaj Dreef, and André van der Hoek
 venue: "International Conference on Software Engineering: Software Engineering Education and Training, 2022"
 thumbnail: assets/images/reading_to_write_code_presentation.jpg
 pdf: "/research/publications/Reading_to_Write_Ryan_22.pdf"

@@ -130,6 +130,9 @@ b,
 strong {
   font-weight: bolder; }
 
+supersmall {
+  font-size: 50%; }
+
 small {
   font-size: 80%; }
 
@@ -2804,6 +2807,13 @@ input[type="button"].btn-block {
   display: block;
   padding: 0.45rem 1.5rem;
   color: #212529; }
+
+.special-baby {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start; }
+.btn-toolbar .input-group {
+  width: auto; }
 
 .btn-group,
 .btn-group-vertical {
@@ -7249,6 +7259,10 @@ button.bg-lightblue:focus {
 
 .text-capitalize {
   text-transform: capitalize !important; }
+
+.font-family-fancy {
+  font-family: "Georgia","Times New Roman",serif !important;
+}
 
 .font-weight-light {
   font-weight: 300 !important; }

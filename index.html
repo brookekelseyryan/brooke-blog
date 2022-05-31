@@ -3,7 +3,7 @@ title: "Home"
 layout: default
 pagination:
 enabled: true
-description: "Computer Science grad student blog and portfolio."
+description: "My name is Brooke Ryan. I'm currently a graduate student at UC Irvine pursuing my master's in computer science. This site contains my writing, research publications, as well as a repository of previous courses I've taught."
 ---
 
 
@@ -16,20 +16,28 @@ description: "Computer Science grad student blog and portfolio."
         <div class="pl-4 pr-0 h-100 tofront">
             <div class="row justify-content-between">
                 <div class="col-md-5 pt-6 pb-6 align-self-center">
-                    <h1 class="mb-3 font-weight-bold">Welcome!</h1>
-                    <p class="mt-4 mb-5">
+                    <h1 class="mb-3 font-weight-bold">Welcome!   <img src="{{ site.baseurl }}/assets/images/brooke_ghostie.png" class="mb-1" width="40px" alt="{{site.title}}"></h1>
+                    <p class="mt-4 mb-4">
                         My name is Brooke Ryan. I'm currently a graduate student at UC Irvine pursuing my master's in computer science. This site contains my writing, research publications, as well as a repository of previous courses I've taught.
                     </p>
-                    <a href="https://github.com/brookekelseyryan" class="btn btn-faicon"><i class="fab fa-github fa-2x"></i></a>
-                    <a href="https://scholar.google.com/citations?&user=E5NlNS0AAAAJ" class="btn btn-faicon"><i class="ai ai-google-scholar fa-2x"></i></a>
-                    <a href="https://linkedin.com/in/bkryan" class="btn btn-faicon"><i class="fab fa-linkedin-in fa-2x"></i></a>
-                    <a href="mailto:brooke.ryan@uci.edu" class="btn btn-faicon"><i class="fa-solid fa-envelope fa-2x"></i></a>
-                    <a href="{{site.baseurl}}/assets/docs/Brooke_Ryan_CV.pdf" class="btn btn-faicon"><i class="ai ai-cv-square fa-2x"></i></a>
+
+
+<!--                    <a href="https://github.com/brookekelseyryan" class="btn btn-faicon"><i class="fab fa-github fa-2x"></i></a>-->
+<!--                    <a href="https://scholar.google.com/citations?&user=E5NlNS0AAAAJ" class="btn btn-faicon"><i class="ai ai-google-scholar fa-2x"></i></a>-->
+<!--                    <a href="https://linkedin.com/in/bkryan" class="btn btn-faicon"><i class="fab fa-linkedin-in fa-2x"></i></a>-->
+<!--                    <a href="{{site.baseurl}}/assets/docs/Brooke_Ryan_CV.pdf" class="btn btn-faicon"><i class="ai ai-cv-square fa-2x"></i></a>-->
+<!--                    <a href="mailto:brooke.ryan@uci.edu" class="btn btn-faicon"><i class="fa-solid fa-envelope fa-2x"></i></a>-->
+<!--                    <a href="https://medium.com/@brookekryan" class="btn btn-faicon"><i class="fa-brands fa-medium fa-2x"></i></a>-->
                 </div>
                 <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url({{site.baseurl}}/assets/images/bloop.jpg);">	</div>
             </div>
         </div>
     </div>
+
+</div>
+
+{% endif %}
+
 
 
     <!-- Begin post excerpts, let's highlight the first 4 _posts on top -->
@@ -152,29 +160,31 @@ description: "Computer Science grad student blog and portfolio."
 
 
 
-</div>
 
-{% endif %}
 
 <!-- Now the rest of the _posts with the usual loop but with an offset:4 on the first page so we can skeep the first 4 _posts displayed above -->
 
-<!--<div class="row mt-3">-->
+<div class="container">
 
-<!--    <div class="col-md-8 main-loop">-->
+<div class="row mt-3 mb-3">
 
-<!--        <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>-->
+    <div class="col-md-7 main-loop ">
 
 
-<!--        {% for post in paginator.posts %}-->
 
-<!--        <div class="mb-5 d-flex justify-content-between main-loop-card">-->
-<!--            <div class="pr-3">-->
-<!--                <h2 class="mb-1 h4 font-weight-bold">-->
-<!--                    <a class="text-dark" href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>-->
-<!--                </h2>-->
-<!--                <p class="text-muted">-->
-<!--                    {{ post.excerpt  | strip_html | strip_newlines | truncate: 186}}-->
-<!--                </p>-->
+        <h4 class="font-weight-bold spanborder"><span>Recent Stories</span></h4>
+
+
+        {% for post in site.posts %}
+
+        <div class="mb-5 d-flex justify-content-between ">
+            <div class="pr-3">
+                <h2 class="mb-1 h4 font-weight-bold">
+                    <a class="text-dark" href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
+                </h2>
+                <p class="text-muted">
+                    {{ post.subtitle  | strip_html | strip_newlines | truncate: 186}}
+                </p>
 <!--                <small class="d-block text-muted">-->
 <!--                    In <span class="catlist">-->
 <!--                    {% for category in post.categories %}-->
@@ -182,77 +192,97 @@ description: "Computer Science grad student blog and portfolio."
 <!--                    {% endfor %}-->
 <!--                    </span>-->
 <!--                </small>-->
-<!--                <small class="text-muted">-->
-<!--                    {{ post.date | date: '%b %d, %Y' }}-->
-<!--                </small>-->
-<!--            </div>-->
-<!--            {% if post.image %}-->
-<!--            <div class="col-md-3 pr-0 text-right">-->
-<!--                <a href="{{site.baseurl}}{{post.url}}">-->
-<!--                    <img class="w-100" src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ post.image | absolute_url }}{% endif %}" alt="{{ post.title }}">-->
-<!--                </a>-->
-<!--            </div>-->
-<!--            {% endif %}-->
-<!--        </div>-->
-<!--        {% endfor %}-->
+                <small class="text-muted">
+                    {{ post.date | date: '%b %d, %Y' }}
+                </small>
+            </div>
+            {% if post.image %}
+            <div class="col-md-3 pr-0 text-right">
+                <a href="{{site.baseurl}}{{post.url}}">
+                    <img class="w-100" src="{% if post.image contains "://" %}{{ post.image }}{% else %}{{ post.image | absolute_url }}{% endif %}" alt="{{ post.title }}">
+                </a>
+            </div>
+            {% endif %}
+        </div>
+        {% endfor %}
 
-<!--        <div class="mt-5">-->
-<!--            &lt;!&ndash; Pagination links &ndash;&gt;-->
-<!--            {% if paginator.total_pages > 1 %}-->
-<!--            <ul class="pagination">-->
-<!--                {% if paginator.previous_page %}-->
-<!--                <li class="page-item"><a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a></li>-->
-<!--                {% else %}-->
-<!--                <li class="page-item disabled"><span class="prev page-link">&laquo;</span></li>-->
-<!--                {% endif %}-->
+        <div class="mt-5">
+            <!-- Pagination links -->
+            {% if paginator.total_pages > 1 %}
+            <ul class="pagination">
+                {% if paginator.previous_page %}
+                <li class="page-item"><a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a></li>
+                {% else %}
+                <li class="page-item disabled"><span class="prev page-link">&laquo;</span></li>
+                {% endif %}
 
-<!--                {% for page in (1..paginator.total_pages) %}-->
-<!--                {% if page == paginator.page %}-->
-<!--                <li class="page-item disabled"><span class="webjeda page-link">{{ page }}</span></li>-->
-<!--                {% elsif page == 1 %}-->
-<!--                <li class="page-item"><a class="page-link" href="{{site.baseurl}}/">{{ page }}</a></li>-->
-<!--                {% else %}-->
-<!--                <li class="page-item"><a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>-->
-<!--                {% endif %}-->
-<!--                {% endfor %}-->
+                {% for page in (1..paginator.total_pages) %}
+                {% if page == paginator.page %}
+                <li class="page-item disabled"><span class="webjeda page-link">{{ page }}</span></li>
+                {% elsif page == 1 %}
+                <li class="page-item"><a class="page-link" href="{{site.baseurl}}/">{{ page }}</a></li>
+                {% else %}
+                <li class="page-item"><a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+                {% endif %}
+                {% endfor %}
 
-<!--                {% if paginator.next_page %}-->
-<!--                <li class="page-item"><a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>-->
-<!--                {% else %}-->
-<!--                <li class="page-item disabled"><span class="next page-link">&raquo;</span></li>-->
-<!--                {% endif %}-->
-<!--            </ul>-->
-<!--            {% endif %}-->
-<!--        </div>-->
+                {% if paginator.next_page %}
+                <li class="page-item"><a class="page-link" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>
+                {% else %}
+                <li class="page-item disabled"><span class="next page-link">&raquo;</span></li>
+                {% endif %}
+            </ul>
+            {% endif %}
+        </div>
 
-<!--    </div>-->
+    </div>
 
-<!--    <div class="col-md-4">-->
-<!--        <div class="sticky-top sticky-top-offset">-->
-<!--            <h4 class="font-weight-bold spanborder"><span>Featured</span></h4>-->
-<!--            <ol class="list-featured">-->
-<!--                {% for post in site.tags.featured %}-->
-<!--                <li class="mb-4">-->
-<!--                <span>-->
-<!--                <h6 class="font-weight-bold">-->
-<!--                <a href="{{site.baseurl}}{{ post.url }}" class="text-dark">{{ post.title }}</a>-->
-<!--                </h6>-->
-<!--                <span class="d-block text-muted">-->
-<!--                    In <span class="catlist">-->
-<!--                    {% for category in post.categories %}-->
-<!--                    <a class="text-capitalize text-muted smoothscroll" href="{{site.baseurl}}/categories.html#{{ category | downcase }}">{{ category }}</a><span class="sep">, </span>-->
-<!--                    {% endfor %}-->
-<!--                    </span>-->
-<!--                </span>-->
-<!--                </span>-->
-<!--                </li>-->
-<!--                {% endfor %}-->
-<!--            </ol>-->
-<!--        </div>-->
-<!--    </div>-->
+    <div class="col-md-5">
+        <div class="sticky-top sticky-top-offset mb-5">
+            <h4 class="font-weight-bold spanborder"><span>Publications</span></h4>
+            <ol class="list-featured">
+                {% for page in site.publications %}
+                <li class="mb-4">
+                <span>
+                    <h6 class="font-weight-normal "> <a href="{{site.baseurl}}{{ page.url }}">{{ page.authors_no_links }}. {{ page.title }}. <em>{{ page.venue }}.</em></a></h6>
 
-<!--</div>-->
+                </li>
+                {% endfor %}
+            </ol>
+        </div>
+
+    </div>
+
+</div>
 
 
+
+
+
+<!-- Mailchimp Subscribe Form -->
+{% if site.mailchimp-list %}
+<div class="border p-5 bg-lightblue">
+    <div class="row justify-content-between">
+        <div class="col-md-6 mb-2 mb-md-0">
+            <h5 class="font-weight-bold">Join My Newsletter <img src="{{ site.baseurl }}/assets/images/brooke_ghostie.png" width="30" alt="{{site.title}}"></h5>
+            Support my mission to make Computer Science fun and accessible for all. It helps grow the blog, and I'll never spam!
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate w-100" target="_blank" novalidate>
+                    <div class="mc-field-group">
+
+                        <input type="email" placeholder="Enter e-mail address" name="EMAIL" class="required email form-control w-100" id="mce-EMAIL" autocomplete="on" required>
+
+
+                        <button type="submit" value="Subscribe" name="subscribe" class="heart btn btn-brooke btn-block w-100 mt-2">Subscribe</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
 
 </div>

@@ -73,7 +73,11 @@ layout: default
             
             <!-- Article -->
 			<article class="article-post">                
-			{{ content }}                
+			{{ content }}
+
+				{% if page.crosspost %}
+				{{page.crosspost}}
+				{% endif %}
 			</article>
 			
 			<!-- Tags -->
