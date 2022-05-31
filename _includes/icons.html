@@ -23,11 +23,11 @@
 {% endif %}
 
 {% if page.citation %}
-<span><a role="button" data-toggle="collapse" data-target="#{{page.uuid}}-citation" aria-expanded="false" aria-controls="{{page.uuid}}-citation" class="btn  btn-lg btn-faicon-darkgrey" style="color: #696969"><i class="fas fa-quote-left"></i></a></span>
+<span><a role="button" data-toggle="collapse" data-target="#{{page.uuid}}-citation" aria-expanded="false" aria-controls="{{page.uuid}}-citation" class="btn  btn-lg btn-faicon-darkgrey" style="color: #797578"><i class="fas fa-quote-left"></i></a></span>
 {% endif %}
 
 {% if page.bibtex %}
-<span class="small btn btn-outline-darkgrey btn-sm btn-round"><a role="button" data-toggle="collapse" data-target="#{{page.uuid}}-bibtex" aria-expanded="false" aria-controls="{{page.uuid}}-bibtex">BibTeX</a></span>
+<span class=" sscroll btn btn-icon btn-sm font-weight-bold" role="button" data-toggle="collapse" data-target="#{{page.uuid}}-bibtex" aria-expanded="false" aria-controls="{{page.uuid}}-bibtex"><a class="no-a-hover">BibTeX</a></span>
 {% endif %}
 
 {% if page.citation %}
