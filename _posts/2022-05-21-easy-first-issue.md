@@ -6,6 +6,7 @@ categories: [software engineering, github, open source]
 author: brooke
 image: assets/images/brookekryan_com_photography_pinkbook_pro.jpg
 permalink: "/blog/how-to-find-easy-first-issue-github.html"
+crosspost: <a href="https://medium.com/@brookekryan/how-to-find-an-easy-first-issue-in-an-open-source-github-project-6d27209b8e4d"> Read on Medium → </a>
 ---
 As a new developer to an open-source project, it can be quite intimidating to figure out where to begin, particularly for your first contribution to the project. And the first step before even doing your first contribution is actually *finding* that first issue to work on—a task which I've found is often underestimated for its difficulty. While there do exist many blog posts on this issue, they tend to begin and end at filtering the list of issues by using the "good first issue" label on GitHub. However, as we will see in the example we'll walk through, that doesn't universally work for all open-source projects—and beginners are then left in the dust about what to do next.
 
