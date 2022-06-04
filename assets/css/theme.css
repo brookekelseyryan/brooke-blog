@@ -728,6 +728,7 @@ article figure figcaption {
 	font-weight: 400;
 	text-align: center;
 	color: #757575;
+	font-family: "Space Mono", serif;
 	/*font-family: "Segoe UI", "Helvetica Neue", "Arial";*/
 }
 article a:not(.no-underline) {
@@ -826,7 +827,7 @@ course h1,course h2,course h3,course h4,course h5,course h6,course .h1,course .h
 	position: fixed;
 	bottom: 0;
 	left: 0;
-	background-color: #fff;
+	background-color: #fffcfd;
 	width: 100%;
 	padding: 14px 0;
 	z-index: 1;
