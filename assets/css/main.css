@@ -43,6 +43,10 @@
   --font-family-sans-serif: "Segoe UI", "Helvetica Neue", "Arial";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
+::selection {
+  background: #FFE7EF;
+}
+
 *,
 *::before,
 *::after {
@@ -59,12 +63,29 @@ html {
 @-ms-viewport {
   width: device-width; }
 
+.space-mono {
+  font-family: "Space Mono", monospace !important;
+}
+
+.corben {
+  font-family: "Corben", serif !important;
+}
+
+.fraunces {
+  font-family: "Fraunces", serif !important;
+}
+
+.manrope {
+  font-family: "Manrope", sans-serif !important;
+}
+
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
 body {
   margin: 0;
-  font-family: "Segoe UI", "Helvetica Neue", "Arial";
+  /*font-family: 'Satoshi', sans-serif;*/
+  font-family: "Space Mono", serif !important;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
@@ -81,6 +102,7 @@ hr {
   overflow: visible; }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fraunces', serif !important;
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
@@ -175,7 +197,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: "Space Mono", monospace;
   font-size: 1em; }
 
 
@@ -3340,10 +3362,17 @@ input[type="button"].btn-block {
   list-style: none; }
 
 .nav-link {
+  font-family: "Space Mono";
+  /*font-family: 'DM Mono', monospace;*/
   display: block;
   padding: 0.8rem 1rem; }
   .nav-link:hover, .nav-link:focus {
-    text-decoration: none; }
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23FFE7EF' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 100%;
+    background-size: auto 6px;
+    background-repeat: repeat-x;
+    text-decoration: none;
+  }
   .nav-link.disabled {
     color: #6c757d; }
 
@@ -7197,7 +7226,7 @@ button.bg-lightblue:focus {
     margin-left: auto !important; } }
 
 .text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  font-family: "Space Mono", monospace; }
 
 .text-justify {
   text-align: justify !important; }
@@ -7269,6 +7298,14 @@ button.bg-lightblue:focus {
 
 .font-weight-normal {
   font-weight: 400 !important; }
+
+.font-weight-500 {
+  font-weight: 500 !important;
+}
+
+.font-weight-600 {
+  font-weight: 600 !important;
+}
 
 .font-weight-bold {
   font-weight: 700 !important; }

@@ -16,7 +16,9 @@ description: "My name is Brooke Ryan. I'm currently a graduate student at UC Irv
         <div class="pl-4 pr-0 h-100 tofront">
             <div class="row justify-content-between">
                 <div class="col-md-5 pt-6 pb-6 align-self-center">
-                    <h1 class="mb-3 font-weight-bold">Welcome!   <img src="{{ site.baseurl }}/assets/images/brooke_ghostie.png" class="mb-1" width="40px" alt="{{site.title}}"></h1>
+                    <h3 class="mb-3 font-weight-600">Welcome!</h3>
+                    <br>
+                    <img src="{{ site.baseurl }}/assets/images/brooke_ghostie.png" class="mb-1" width="40px" alt="{{site.title}}">
                     <p class="mt-4 mb-4">
                         My name is Brooke Ryan. I'm currently a graduate student at UC Irvine pursuing my master's in computer science. This site contains my writing, research publications, as well as a repository of previous courses I've taught.
                     </p>
@@ -172,15 +174,15 @@ description: "My name is Brooke Ryan. I'm currently a graduate student at UC Irv
 
 
 
-        <h4 class="font-weight-bold spanborder"><span>Recent <a href="{{site.baseurl}}/blog/index.html">Stories</a></span></h4>
+        <h4 class="font-weight-600 spanborder"><span>Recent <a href="{{site.baseurl}}/blog/index.html">Stories</a></span></h4>
 
 
         {% for post in site.posts %}
 
         <div class="mb-5 d-flex justify-content-between ">
             <div class="pr-3">
-                <h2 class="mb-1 h4 font-weight-bold">
-                    <a class="text-dark" href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
+                <h2 class="mb-1 h4 font-weight-600">
+                    <a class="text-dark " href="{{site.baseurl}}{{post.url}}">{{ post.title }}</a>
                 </h2>
                 <p class="text-muted">
                     {{ post.subtitle  | strip_html | strip_newlines | truncate: 186}}
@@ -239,12 +241,12 @@ description: "My name is Brooke Ryan. I'm currently a graduate student at UC Irv
 
     <div class="col-md-5">
         <div class="sticky-top sticky-top-offset mb-5">
-            <h4 class="font-weight-bold spanborder"><span><a href="{{site.baseurl}}/research/index.html">Publications</a></span></h4>
+            <h4 class="font-weight-600 spanborder"><span><a href="{{site.baseurl}}/research/index.html">Publications</a></span></h4>
             <ol class="list-featured">
                 {% for page in site.publications %}
                 <li class="mb-4">
                 <span>
-                    <h6 class="font-weight-normal "> <a href="{{site.baseurl}}{{ page.url }}">{{ page.authors_no_links }}. {{ page.title }}. <em>{{ page.venue }}.</em></a></h6>
+                    <h6 class="font-weight-light "> <a href="{{site.baseurl}}{{ page.url }}">{{ page.authors_no_links }}. {{ page.title }}. <em>{{ page.venue }}.</em></a></h6>
 
                 </li>
                 {% endfor %}
@@ -264,7 +266,7 @@ description: "My name is Brooke Ryan. I'm currently a graduate student at UC Irv
 <div class="border p-5 bg-lightblue">
     <div class="row justify-content-between">
         <div class="col-md-6 mb-2 mb-md-0">
-            <h5 class="font-weight-bold">Join My Newsletter <img src="{{ site.baseurl }}/assets/images/brooke_ghostie.png" width="30" alt="{{site.title}}"></h5>
+            <h4 class="font-weight-600">Join My Newsletter <img src="{{ site.baseurl }}/assets/images/brooke_ghostie.png" width="30" alt="{{site.title}}"></h4>
             Support my mission to make Computer Science fun and accessible for all. It helps grow the blog, and I'll never spam!
         </div>
         <div class="col-md-6">
