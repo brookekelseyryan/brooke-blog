@@ -91,7 +91,7 @@ body {
   line-height: 1.6;
   color: #212529;
   text-align: left;
-  background-color: #fff; }
+  background-color: #fffcfd; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -5220,7 +5220,7 @@ button.bg-dark:focus {
   background-color: #0a0c0d !important; }
 
 .bg-white {
-  background-color: #fff !important; }
+  background-color: #fffcfd !important; }
 
 a.bg-white:hover, a.bg-white:focus,
 button.bg-white:hover,
@@ -5288,7 +5288,7 @@ button.bg-lightblue:focus {
   background-color: #c6e2d0 !important; }
 
 .bg-white {
-  background-color: #fff !important; }
+  background-color: #fffcfd !important; }
 
 .bg-transparent {
   background-color: transparent !important; }
