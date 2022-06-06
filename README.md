@@ -48,3 +48,6 @@ If you like my alterations of the template (minimalistic front page, coursework 
 
 ### Squiggle Hover
 [code by Geoff Graham, edited to pink](https://codemyui.com/theoutline-squiggle-link-hover-effect/), originally seen on [Ayaka B. Ito](https://ayakaito.com/).
+
+### Fonts
+Google Fonts used, referenced from [TypeWolf's Definitive Guide to Free Fonts](https://www.typewolf.com/free-fonts).
