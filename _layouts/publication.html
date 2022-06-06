@@ -2,7 +2,8 @@
 layout: default
 ---
 {% assign author = site.authors[page.author] %}
-<div class="container">
+
+<div class="container bg-lightpink">
 
 
 	<div class="container-lg pt-4 pb-4">
@@ -79,6 +80,8 @@ layout: default
 
 			<!-- Mailchimp Subscribe Form -->
 			{% if page.comments != false %}
+			{% include comments.html %}
+			{% endif %}
 <!--			{% if site.mailchimp-list %}-->
 <!--			<div class="border p-5 bg-lightblue">-->
 <!--				<div class="row justify-content-between">-->
@@ -105,9 +108,6 @@ layout: default
 <!--			{% endif %}-->
 
 			<!-- Comments -->
-
-			{% include comments.html %}
-			{% endif %}
 
 
 

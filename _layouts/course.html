@@ -2,7 +2,8 @@
 layout: default
 ---
 {% assign course = site.courses[page.course] %}
-<div class="container">
+<canvas id="canvas"> </canvas>
+<div class="container bg-lightpink">
 <div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
 		<div class="h-100 tofront">
 			<div class="row {% if page.image %} justify-content-between {% else %} justify-content-center {% endif %}">
@@ -25,7 +26,7 @@ layout: default
 </div>
 
 
-<div class="container-lg pt-4 pb-4">
+<div class="container-lg pt-4 pb-4 bg-lightpink">
 	<div class="row justify-content-center" style="margin-top: -1em">
 
 		<!-- Share -->
