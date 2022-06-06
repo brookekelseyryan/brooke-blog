@@ -45,3 +45,6 @@ If you like my alterations of the template (minimalistic front page, coursework 
 
 ### Curious Ghosts
 [by Stefan Weck, edited to pink and changed JS for my needs](https://codepen.io/stefanweck/pen/ZLpgBa)
+
+### Squiggle Hover
+[code by Geoff Graham, edited to pink](https://codemyui.com/theoutline-squiggle-link-hover-effect/), originally seen on [Ayaka B. Ito](https://ayakaito.com/).
