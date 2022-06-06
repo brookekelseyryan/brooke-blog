@@ -2,7 +2,9 @@
 layout: default
 ---
 {% assign author = site.authors[page.author] %}
-<div class="container">
+<canvas id="canvas">Your browser doesn't support canvas</canvas>
+
+<div class="container bg-lightpink">
 
 
 	<div class="container-lg pt-4 pb-4">
@@ -91,11 +93,11 @@ layout: default
  
             <!-- Mailchimp Subscribe Form -->
             {% if site.mailchimp-list %}
-			<div class="border p-5 bg-lightblue">
+			<div class="border-brooke p-5 bg-lightblue">
 				<div class="row justify-content-between">
 					<div class="col-md-6 mb-2 mb-md-0">
 						<h5 class="font-weight-bold">Join My Newsletter <img src="{{ site.baseurl }}/assets/images/brooke_ghostie.png" width="30" alt="{{site.title}}"></h5>
-						 Support my mission to make Computer Science fun and accessible for all. It helps grow the blog, and I'll never spam!
+						 Sign up to get an email when I (occasionally) post!
 					</div>
 					<div class="col-md-6">
 						<div class="row">
@@ -145,6 +147,27 @@ layout: default
             {% if page.comments != false %}
                 {% include comments.html %}
             {% endif %}
+
+
+<!--			Cite this -->
+
+			<div class="row mt-6 mb-6" >
+				<div class="col-12">
+
+					<h4 class="mt-2">Reuse</h4>
+					<p class="font-family-fancy">Text and figures are licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution CC BY 4.0</a>. The figures that have been reused from other sources that don't fall under this license credit the original source in the caption.</p>
+
+					<h4>Cite this Post</h4>
+					<div id="cite-this">
+						<div class="language-bibtex highlighter-rouge"> <div class="highlight border-brooke"> <pre class="highlight mb-0">@misc{ryan-{{ page.date | date: "%Y" }}-{{ page.slug }},
+  author = {Brooke K. Ryan},
+  title = { {{ page.title }} },
+  url = {https://brookekryan.com{{page.permalink}}},
+  year = { {{page.date | date: "%Y"}} }
+}</pre></div></div>
+					</div>
+				</div>
+			</div>
             
 		</div>
         
@@ -157,7 +180,7 @@ layout: default
 ================================================== -->
 <div class="alertbar">
 	<div class="container text-center">
-		<span><img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}"> &nbsp; Help make <b>science</b> fun for all, subscribe to support my blog </span>
+		<span><img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}"> &nbsp; Sign up to get an email when I occasionally post! </span>
 		<form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
 			<div class="mc-field-group">
 				<input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
