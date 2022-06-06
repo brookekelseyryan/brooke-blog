@@ -51,3 +51,6 @@ If I'm not able to take a photo myself, these are some good resources for free i
 
 ### Fonts
 Google Fonts used, referenced from [TypeWolf's Definitive Guide to Free Fonts](https://www.typewolf.com/free-fonts).
+
+### Citation and Reuse blurb
+The blurb for Citations and Reuse at the bottom of each blog post was inspired by a similar one I saw on [Piping Hot Data](https://www.pipinghotdata.com/). Although I wrote all the code to implement it on mine. 
