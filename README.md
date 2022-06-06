@@ -43,4 +43,5 @@ As you can see, I forked the template from the [Mundana theme](https://bootstrap
 If you like my alterations of the template (minimalistic front page, coursework page, etc.) you are also welcome to use it, but please ensure that [Sal](https://www.wowthemes.net/donate/) (original template creator) and I are both credited somewhere.
 
 
-
+### Curious Ghosts
+[by Stefan Weck, edited to pink and changed JS for my needs](https://codepen.io/stefanweck/pen/ZLpgBa)
