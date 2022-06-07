@@ -1,3 +1,4 @@
+{% if page.hidden != true %}
 <div class="mb-0 justify-content-between main-loop-card">
     <div class="d-flex">
     <div class="pr-3">
@@ -7,10 +8,10 @@
         <p>{{ page.authors }}</p>
 
         <p class="excerpt">
-            {{ page.abstract  | strip_html | strip_newlines | truncate: 186}}
+            {{ page.abstract  | strip_html | strip_newlines | truncate: 141}}
         </p>
 
-        <small class="d-block text-muted">
+        <small class="d-block ">
             {% if page.venue %}
             {{ page.venue }}
             {% else %}
@@ -26,7 +27,7 @@
     {% if page.thumbnail %}
     <div class="col-md-3 pr-0 text-right">
         <a class="no-a-hover" href="{{site.baseurl}}{{post.url}}">
-            <img class="w-100" src="{% if post.thumbnail contains "://" %}{{ page.thumbnail }}{% else %}{{ site.baseurl }}/{{ page.thumbnail }}{% endif %}" alt="{{ page.title }}">
+            <img class="w-100 border-brooke" src="{% if post.thumbnail contains "://" %}{{ page.thumbnail }}{% else %}{{ site.baseurl }}/{{ page.thumbnail }}{% endif %}" alt="{{ page.title }}">
         </a>
     </div>
     {% endif %}
@@ -35,8 +36,9 @@
 
 <div class="mb-5">
 
-    <div class="text-muted mb-1">
+    <div class="text-muted mb-1 mt-2">
         {% include icons.html %}
     </div>
 
 </div>
+{% endif %}

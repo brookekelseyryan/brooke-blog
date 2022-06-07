@@ -44,7 +44,7 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 ::selection {
-  background: #F0C4B1;
+  background: #FFE7E7;
 }
 
 *,
@@ -1810,7 +1810,14 @@ fieldset:disabled a.btn {
     .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-primary.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(3, 168, 124, 0.5); }
+.btn-icon-brooke {
+  color: #212529;
 
+  border-color: #212529; }
+
+.btn-icon-brooke:hover{
+  background-color: #FFE7E7;
+}
 .btn-icon {
   color: #fff;
   background-color: #787578;
@@ -2625,6 +2632,12 @@ fieldset:disabled a.btn {
   padding: 0.25rem 1rem;
   font-size: 0.875rem;
   line-height: 1.5;
+  border-radius: 0.2rem; }
+
+.btnbrooke {
+  padding: 0.25rem 1rem;
+  font-size: 0.875rem;
+  line-height: 1.75;
   border-radius: 0.2rem; }
 
 .btn-block {

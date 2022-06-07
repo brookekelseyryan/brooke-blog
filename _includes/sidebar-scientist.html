@@ -1,0 +1,16 @@
+    <div class="sticky-top sticky-top-offset ">
+        <h4 class="font-weight-600 spanborder"><span><a href="https://scholar.google.com/citations?&user=E5NlNS0AAAAJ">Bibliography</a></span></h4>
+        <ol class="list-featured">
+            {% for page in site.publications %}
+            <li class="mb-4">
+                <span>
+                    <h6 class="font-weight-light "> <a href="{{site.baseurl}}{{ page.url }}">{{ page.authors_no_links }}. {{ page.title }}. <em>{{ page.venue }}.</em></a></h6>
+
+            </li>
+            {% endfor %}
+
+        </ol>
+
+
+    </div>
+

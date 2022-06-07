@@ -1,33 +1,33 @@
 {% if page.pdf %}
-<span><a href="{{site.baseurl}}{{page.pdf}}" class="btn  btn-lg btn-faicon-darkgrey"><i class="far fa-file-pdf "></i></a></span>
+<span><a href="{{site.baseurl}}{{page.pdf}}" class="no-a-hover btn border-brooke btn-lg btn-faicon-brooke"><i class=" far fa-file-pdf "></i></a></span>
 {% endif %}
 
 {% if page.slides %}
-<span><a href="{{site.baseurl}}{{page.slides}}" class="btn  btn-lg btn-faicon-darkgrey"><i class="far fa-file-powerpoint"></i></a></span>
+<span><a href="{{site.baseurl}}{{page.slides}}" class="no-a-hover btn border-brooke btn-lg btn-faicon-brooke"><i class=" far fa-file-powerpoint"></i></a></span>
 {% endif %}
 
 {% if page.github %}
-<span><a href="{{page.github}}" class="btn  btn-lg btn-faicon-darkgrey"><i class="fab fa-github"></i></a></span>
+<span><a href="{{page.github}}" class="no-a-hover btn border-brooke btn-lg btn-faicon-brooke"><i class=" fab fa-github"></i></a></span>
 {% endif %}
 
 {% if page.youtube %}
-<span><a href="{{page.youtube}}" class="btn  btn-lg btn-faicon-darkgrey"><i class="fab fa-youtube"></i></a></span>
+<span><a href="{{page.youtube}}" class="no-a-hover btn border-brooke btn-lg btn-faicon-brooke"><i class="thin-icon fab fa-youtube"></i></a></span>
 {% endif %}
 
 {% if page.doi %}
-<span><a href="{{page.doi}}" class="btn  btn-lg btn-faicon-darkgrey"><i class="ai ai-doi "></i></a></span>
+<span><a href="{{page.doi}}" class="no-a-hover btn border-brooke btn-lg btn-faicon-brooke"><i class="ai ai-doi "></i></a></span>
 {% endif %}
 
 {% if page.experiments %}
-<span><a href="{{page.experiments}}" class="btn  btn-lg btn-faicon-darkgrey"><i class="fas fa-flask"></i></a></span>
+<span><a href="{{page.experiments}}" class="no-a-hover btn border-brooke btn-lg btn-faicon-brooke"><i class="thin-icon fas fa-flask"></i></a></span>
 {% endif %}
 
 {% if page.citation %}
-<span><a role="button" data-toggle="collapse" data-target="#{{page.uuid}}-citation" aria-expanded="false" aria-controls="{{page.uuid}}-citation" class="btn  btn-lg btn-faicon-darkgrey" style="color: #797578"><i class="fas fa-quote-left"></i></a></span>
+<span><a role="button" data-toggle="collapse" data-target="#{{page.uuid}}-citation" aria-expanded="false" aria-controls="{{page.uuid}}-citation" class="no-a-hover btn border-brooke btn-lg btn-faicon-brooke" style="color: #212529"><i class="thin-icon fas fa-quote-left"></i></a></span>
 {% endif %}
 
 {% if page.bibtex %}
-<span class=" sscroll btn btn-icon btn-sm font-weight-500" role="button" data-toggle="collapse" data-target="#{{page.uuid}}-bibtex" aria-expanded="false" aria-controls="{{page.uuid}}-bibtex"><a class="no-a-hover">BibTeX</a></span>
+<span class=" sscroll border-brooke btnbrooke btn btn-icon-brooke  font-weight-500" role="button" data-toggle="collapse" data-target="#{{page.uuid}}-bibtex" aria-expanded="false" aria-controls="{{page.uuid}}-bibtex"><a class=" no-a-hover">BibTeX</a></span>
 {% endif %}
 
 {% if page.citation %}

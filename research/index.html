@@ -7,11 +7,11 @@ permalink: "/research/"
 ---
 
 <!-- Now the rest of the posts with the usual loop but with an offset:4 on the first page so we can skeep the first 4 posts displayed above -->
-<div class="container">
+<div class="container bg-lightpink">
 
-<!--    <div class="row mt-3">-->
+    <div class="row mt-3">
 
-        <div class="col-lg-11 main-loop">
+        <div class="col-md-8 main-loop">
 
 <!--    TODO This is where I'll put my research statement and stuff-->
 <!--    <div class="row align-items-center ">-->
@@ -35,8 +35,8 @@ permalink: "/research/"
 
     <h4 class="font-weight-600 spanborder"><span>Projects</span></h4>
 
-<!--    change to | reverse for most recent first -->
-    {% assign projs = site.projects | sort: 'date' %}
+<!--    append | reverse for most recent first -->
+    {% assign projs = site.projects | sort: 'date' | reverse %}
 
     {% for page in projs %}
 
@@ -46,5 +46,9 @@ permalink: "/research/"
 
         </div>
 
+        <div class="col-md-4 bg-lightpink">
+            {% include sidebar-scientist.html %}
+        </div>
 
+</div>
 </div>
