@@ -27,20 +27,30 @@ Welcome to the `~code~` behind my [blog](https://brookekryan.com/)!
 6. Your changes *should* be visible again on the page. Sometimes, if you change an asset though, you might need to Ctrl+C and start again from step 1. 
 
 
-## Free Images Sources
+
+## Credits
+
+### Theme
+
+As you can see, I forked the template from the [Mundana theme](https://bootstrapstarter.com/mundana-theme-jekyll/) by [WowThemes.net](https://www.wowthemes.net/). While I did make a fair amount of changes (are all documented in the commit history) to tailor it to my needs, I am very grateful for Sal's work to create this theme. It is the only free, Medium-looking template I'm aware of, and its really beautiful. 
+
+If you like my alterations of the template (minimalistic front page, coursework page, etc.) you are also welcome to use it, but please ensure that [Sal](https://www.wowthemes.net/donate/) (original template creator) and I are both credited somewhere.
+
+### Free Images
 
 If I'm not able to take a photo myself, these are some good resources for free images that can be used without copyright:
 
 * [pexels](https://www.pexels.com/license/) 
 * [pixabay](https://pixabay.com/) 
 
+### Curious Ghosts
+[by Stefan Weck, edited to pink and changed JS for my needs](https://codepen.io/stefanweck/pen/ZLpgBa)
 
+### Squiggle Hover
+[code by Geoff Graham, edited to pink](https://codemyui.com/theoutline-squiggle-link-hover-effect/), originally seen on [Ayaka B. Ito](https://ayakaito.com/).
 
-## Theme Credits
+### Fonts
+Google Fonts used, referenced from [TypeWolf's Definitive Guide to Free Fonts](https://www.typewolf.com/free-fonts).
 
-As you can see, I forked the template from the [Mundana theme](https://bootstrapstarter.com/mundana-theme-jekyll/) by [WowThemes.net](https://www.wowthemes.net/). While I did make a fair amount of changes (are all documented in the commit history) to tailor it to my needs, I am very grateful for Sal's work to create this theme. It is the only free, Medium-looking template I'm aware of, and its really beautiful. 
-
-If you like my alterations of the template (minimalistic front page, coursework page, etc.) you are also welcome to use it, but please ensure that [Sal](https://www.wowthemes.net/donate/) (original template creator) and I are both credited somewhere.
-
-
-
+### Citation and Reuse blurb
+The blurb for Citations and Reuse at the bottom of each blog post was inspired by a similar one I saw on [Piping Hot Data](https://www.pipinghotdata.com/). Although I wrote all the code to implement it on mine. 
