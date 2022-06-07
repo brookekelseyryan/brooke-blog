@@ -1,6 +1,6 @@
 ---
 layout: course
 course: SIP-V
-permalink: "/courses/virtual-summer-immersion-program.html"
+permalink: "/teaching/virtual-summer-immersion-program.html"
 ---
 

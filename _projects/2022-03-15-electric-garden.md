@@ -30,7 +30,7 @@ upon which further projects of a similar vein may be explored in the
 future.
 
 <figure>
-  <img class="border-0"
+  <img class="rounded border-brooke"
   src="/assets/images/the_electric_garden/electric_exhibit.jpg"
   alt="">
   <figcaption>
@@ -79,17 +79,17 @@ engineering, including girls and Latinx children.
 <figure>
 <div class="row">
 <div class="col-4">
-  <img class="border-0"
+  <img class="rounded border-brooke"
   src="/assets/images/the_electric_garden/page3.png"
   alt="">
   </div>
   <div class="col-4">
-  <img class="border-0"
+  <img class="rounded border-brooke"
     src="/assets/images/the_electric_garden/page5.png"
     alt="">
     </div>
     <div class="col-4">
-    <img class="border-0"
+    <img class="rounded border-brooke"
       src="/assets/images/the_electric_garden/page7.png"
       alt="">
       </div>
@@ -135,12 +135,12 @@ team in order to set the scene.
 <figure>
 <div class="row">
 <div class="col-6">
-  <img class="border-0"
+  <img class="rounded border-brooke"
   src="/assets/images/the_electric_garden/image1.jpg"
   alt="">
   </div>
   <div class="col-6">
-    <img class="border-0"
+    <img class="rounded border-brooke"
     src="/assets/images/the_electric_garden/image2.jpg"
     alt="">
     </div>
@@ -160,7 +160,7 @@ discussed in the following section.
 ### Final Project Prototype
 
 <figure>
-  <img class="border-0"
+  <img class="rounded border-brooke"
   src="/assets/images/the_electric_garden/diagram.jpg"
   alt="">
   <figcaption>
@@ -305,20 +305,20 @@ for further reading and future reference.
 <figure>
 <div class="row">
 <div class="col-4">
-  <img class="border-0"
+  <img class="rounded border-brooke"
   src="/assets/images/the_electric_garden/shroom_blue.jpg"
   alt="">
   </div>
   <div class="col-4">
-  <img class="border-0"
+  <img class="rounded border-brooke"
     src="/assets/images/the_electric_garden/shroom_green.jpg"
     alt="">
     </div>
     <div class="col-4">
-    <img class="border-0"
+    <img class="rounded border-brooke"
         src="/assets/images/the_electric_garden/shrooms_vertical.jpg"
         alt="">
-        </div>
+        </div>~~~~
   </div>
   <figcaption>
 Figures 5a-c: Final exhibit, with the 3D printed glowing mushroom prototypes, displayed during Week 10 of the course.

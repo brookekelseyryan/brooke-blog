@@ -1,7 +1,7 @@
 ---
 layout: course
 course: CS-141
-permalink: "/courses/information-retrieval.html"
+permalink: "/teaching/information-retrieval.html"
 ---
 --------------
 # INF 141 Syllabus Brooke 

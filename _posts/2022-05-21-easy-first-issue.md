@@ -20,7 +20,7 @@ So, I'm writing this post for an audience similar to our student cohort in the P
 The open source project I'm going to be using to walk through is [Tensorflow](https://github.com/tensorflow/tensorflow). It's an open-source library for Deep Learning that is written mostly in C++ and is maintained by Google. If that sounds super scary, don't worry---I'm using this as the example project mainly because of the abundance of activity the project has so that I can demonstrate various scenarios you may encounter. Even if you are working in a project that is a completely different language or product, all these same tips should still apply.
 
 <figure>
-  <img class="border"
+  <img class="rounded border-brooke"
   src="/assets/images/easy-first-issue-post/tensorflow.png"
   alt="TensorFlow GitHub project page.">
   <figcaption>TensorFlow GitHub project <a href="https://github.com/tensorflow/tensorflow">page</a>.</figcaption>
@@ -37,7 +37,7 @@ It can be hard, I think, for newcomers to open-source to understand this. When y
 ## Bad Issue Example 1: An Angry Customer
 
 <figure>
-  <img class="border"
+  <img class="rounded border-brooke"
   src="/assets/images/easy-first-issue-post/1st_class_windows_support.png"
   alt="Tensorflow issue 77">
   <figcaption>TensorFlow <a href="https://github.com/tensorflow/tensorflow/issues/77">issue #77</a>.</figcaption>
@@ -48,7 +48,7 @@ Here's an example that made me chuckle. This individual is demanding "1st class 
 ## Bad Issue Example 2: Red Alert! Unrelated webpage down! 
 
 <figure>
-  <img class="border"
+  <img class="rounded border-brooke"
   src="/assets/images/easy-first-issue-post/Yann_webpage_down.png"
   alt="Tensorflow issue 209">
   <figcaption>TensorFlow <a href="https://github.com/tensorflow/tensorflow/issues/209">issue #209</a>.</figcaption>
@@ -63,7 +63,7 @@ Despite the relevancy of this webpage to the TensorFlow project, this is *not* a
 ## Bad Issue Example 3: "Good First Issue" that is actually mega-hard
 
 <figure>
-  <img class="border"
+  <img class="rounded border-brooke"
   src="/assets/images/easy-first-issue-post/hard.png"
   alt="Tensorflow issue 22926">
   <figcaption>TensorFlow <a href="https://github.com/tensorflow/tensorflow/issues/22926">issue #22926</a>.</figcaption>
@@ -75,7 +75,7 @@ As we scroll down perusing the comments on this issue, we find lots of moderator
 
 About halfway through the comments, we stumble upon a comment from a user @Gomesz785 that aptly summarizes the theme here: 
 <figure>
-  <img class="border"
+  <img class="rounded border-brooke"
   src="/assets/images/easy-first-issue-post/comments.png">
   <figcaption>TLDR: A <a href="https://github.com/tensorflow/tensorflow/issues/22926#issuecomment-920594088">good Samaritan user warns newcomers</a> that despite the "good first issue" label, this is actually a "god-level" issue.</figcaption>
 </figure>
@@ -101,7 +101,7 @@ In this section, I'm going to outline a heuristic for finding a suitable easy is
 I like to think of documentation in an open-source GitHub project as the equivalent of the Information Kiosk or Customer Service desk. This is the easy, no-brainer, first-stop we're going to to get some information. Are they always 100% right? Certainly not, we can all think of examples where Customer Service has given us well-intended, but ultimately misguided information about how to proceed on a given topic. But usually, the Information Kiosk is going to have the latest company-provided information on a variety of different topics. 
 
 <figure>
-  <img class="border"
+  <img class="rounded border-brooke"
   src="/assets/images/easy-first-issue-post/kiosk.png">
   <figcaption>Information kiosk from one of my favorite childhood games, Rollercoaster Tycoon. <a href="https://www.reddit.com/r/rct/comments/fet3al/i_made_information_kiosk_blender_3d/">From Reddit</a></figcaption>
 </figure>
@@ -133,7 +133,7 @@ An "easy bug" does not necessarily mean that its easy to fix. In this context, a
 So, an "easy bug" in this case is really easy to spot and reproduce on your machine. How difficult it actually is to fix is something that you can try to decipher by reading the comments for the given issue, and mostly by working on the bug itself.  
 
 <figure>
-  <img class="border"
+  <img class="rounded border-brooke"
   src="/assets/images/easy-first-issue-post/mrkrab.jpeg">
   <figcaption>Mr. Krabs and his elusive white whale, Moby Dollar. <a href="https://www.youtube.com/watch?v=8t6ipgd8JmU">From YouTube</a></figcaption>
 </figure>

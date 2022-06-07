@@ -19,7 +19,7 @@ Why is this?  Its not necessarily that Software shuns original, independent thin
 Take the [JSON-Java project](https://github.com/stleary/JSON-java), for instance.  Looking at their GitHub project page, this is a library that is used by *at least* **137,000** projects--and has a team of **41 developers** working on maintaining the code.  
 
 <figure>
-  <img class="border"
+  <img class="rounded border-brooke"
   src="/assets/images/JSONJava.png"
   alt="JSON Java.">
   <figcaption> JSON Java <a href="https://github.com/stleary/JSON-java">GitHub project</a> contributors and users.</figcaption>

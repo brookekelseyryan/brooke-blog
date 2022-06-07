@@ -16,7 +16,7 @@ layout: default
 					{% if page.youtube %}
 					<iframe class="youtube" src="{{ page.youtube }}" title="{{ page.title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					{% elsif page.thumbnail %}
-					<img class="rounded " src="{% if page.thumbnail contains "://" %}{{ page.thumbnail }}{% else %}{{ site.baseurl }}/{{ page.thumbnail }}{% endif %}" alt="{{ page.title }}">
+					<img class="rounded border-brooke" src="{% if page.thumbnail contains "://" %}{{ page.thumbnail }}{% else %}{{ site.baseurl }}/{{ page.thumbnail }}{% endif %}" alt="{{ page.title }}">
 					{% endif %}
 				</div>
 				<div class="col-md-12 pl-0 pr-0 pr-md-4 pt-4 pb-4 align-self-center">

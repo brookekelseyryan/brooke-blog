@@ -1,6 +1,6 @@
 ---
 layout: course
 course: SWE-262P
-permalink: "/courses/programming-styles.html"
+permalink: "/teaching/programming-styles.html"
 ---
 

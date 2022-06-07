@@ -1,12 +1,12 @@
 ---
-title: "Courses"
+title: "Teaching"
 layout: default
-permalink: "/courses/"
+permalink: "/teaching/"
 ---
 <canvas id="canvas"> </canvas>
 
 <div class="container bg-lightpink">
-    <h4 class="font-weight-bold spanborder"><span>{{page.title}}</span></h4>
+    <h4 class="font-weight-600 spanborder"><span>{{page.title}}</span></h4>
     <div class="row gap-y listrecent listrecent listauthor">
         {% for course in site.courses %}
         <div class="col-lg-6 mb-4">
@@ -14,7 +14,7 @@ permalink: "/courses/"
                 <div class="row">
                     <div class="col-md-3 mb-4 mb-md-0"><img alt="{{ course[1].name }}" src="{{site.baseurl}}/{{ course[1].avatar }}" class="rounded-circle" height="80" width="80"></div>
                     <div class="col-md-9">
-                        <a href="{{site.baseurl}}/courses/{{ course[1].name | slugify }}.html">
+                        <a href="{{site.baseurl}}/teaching/{{ course[1].name | slugify }}.html">
                             <h4 class="text-dark mb-0"> {{ course[1].name }} </h4>
                             <div>
                                 <small class="font-weight-normal">{{ course[1].institution }}: {{ course[1].quarter }}</small> <br>

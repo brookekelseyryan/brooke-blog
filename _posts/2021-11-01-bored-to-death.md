@@ -7,7 +7,7 @@ categories: [ neurodiversity, ADHD, software engineering, work ]
 courses: 
 image: assets/images/student-stress.png
 triggers: suicidal thoughts, depression
-permalink: "/blog/bored-to-death.html"
+permalink: "/blog/bored-to-death"
 ---
 
 I'm often asked by my students how I wound up in grad school, and especially why I chose to come to academia when I had a prestigious, 6-figure job in tech right out of undergrad. Sometimes even my fellow grad students will ask me this question after I declare my goal is to one day become a professor—why not just go to industry where I'll make way *more* money doing "the same" work? 
@@ -31,7 +31,7 @@ So what was Brooke doing during a typical sprint, 6 months into her tenure?
 Hunched over in my dimly-lit corner cubicle, this particular sprint, I was hard at work. Not exactly doing any bug fixes, or new feature requests, or really any programming at all. No, a task much more important than this had me absolutely fixated. I spent an entire two week period—the length of the an entire agile "sprint" in that company—researching the *best* dog food for my new puppy Henry. During our team's morning stand-up meetings, I literally would report imaginary roadblocks I was facing to justify why this task that was supposed to take a few hours was now taking the entire sprint: "Yeah, we gotta loop Mark down in IT on this one, this issue is looking a *lot* more complicated than we initially budgeted for." But really, "Mark in IT" was the author of a book on naturopathic dog food. I would scuffle back to my desk, anytime a senior teammate walked by I'd pull up the code I hadn't touched since it was assigned weeks ago, and go back to spending the *entire day* *researching dog food*. I did not get my work done at the end of the sprint, but I was now an expert on DIY raw natural dog food. Even after all this, Henry actually wouldn't be any better off either, I realized because of the time involved in implementing all the "best" methodologies (I could barely clean up my own plates after dinner, how the hell was I going to do it for a dog), this would be totally unrealistic to even attempt. Henry just eats kibble now. 
 
 <figure>
-  <img class="border-0"
+  <img class="rounded border-brooke"
   src="/assets/images/henry.jpeg"
   alt="My dog Henry and me at the beach.">
   <figcaption>My dog Henry and me at the beach.</figcaption>
@@ -48,7 +48,7 @@ In my efforts to force myself to fit that neurotypical mold was when things beca
 Hearing myself think that, I left work, and went immediately to my doctor, who put me on a medical leave of absence. It took me about a year and a half after that dark, gray day to find what I *really* wanted to do. For a while, that was nothing. I was able to use the funds I'd saved from working that job to take time off to backpack. While I had no trouble with my resume getting interviews from more tech companies (I got flown up to Google during this period), the only job that remotely interested me was a summer teaching job I eventually I stumbled upon for Girls Who Code. By that time I'd committed to doing the John Muir Trail that August, so a seasonal gig was an accidental perfect fit for me at the time. 
 
 <figure>
-  <img class="border-0"
+  <img class="rounded border-brooke"
   src="/assets/images/sip2019.jpeg"
   alt="Group picture from Summer 2019 with Girls Who Code.">
   <figcaption>Group picture from Summer 2019 with Girls Who Code.</figcaption>
