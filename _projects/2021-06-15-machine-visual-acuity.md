@@ -2,6 +2,7 @@
 layout: publication
 title:  "Machine Visual Acuity"
 authors: <b>Brooke K. Ryan</b>*, <a class="text-dark" href="mailto:andersnv@hs.uci.edu ">Anderson Vu, MD</a>*, and Andreana Chua
+authorsfull: Ryan, Brooke and Vu, Anderson and Chua, Andreana and Browne, Andrew and Baldi, Pierre
 venue: Advised by <a href="https://www.faculty.uci.edu/profile.cfm?faculty_id=6370">Professor Andrew Browne, MD</a> and <a href="https://www.igb.uci.edu/~pfbaldi/">Professor Pierre Baldi</a>; 2021
 thumbnail: assets/images/machine_visual_acuity_thumb.png
 pdf: "/research/projects/Machine_Visual_Acuity_Ryan_21.pdf"

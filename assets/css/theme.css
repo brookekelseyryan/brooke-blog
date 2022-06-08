@@ -43,6 +43,7 @@ a {
 }
 .a-underline {
 	color: inherit;
+	font-style: italic;
 	/*border-bottom: 2px solid #212529;*/
 }
 

@@ -2,9 +2,9 @@
 layout: publication
 title:  "The Electric Garden/ El Jardín Eléctrico"
 authors: <b>Brooke K. Ryan</b>* and Mayra Cortez*
+authorsfull: Ryan, Brooke and Cortez, Mayra and Peppler, Kylie 
 venue: Advised by <a href="http://www.kpeppler.com/">Professor Kylie Peppler</a>; 2022
 thumbnail: assets/images/the_electric_garden/electric_exhibit.jpg
-pdf: "/research/projects/Machine_Visual_Acuity_Ryan_21.pdf"
 permalink: "/research/the-electric-garden.html"
 tags: [electronics, STEAM, education]
 uuid: electricgarden

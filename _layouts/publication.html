@@ -84,6 +84,37 @@ layout: default
 			{% if page.comments != false %}
 			{% include comments.html %}
 			{% endif %}
+
+			<!--			Cite this -->
+
+			<div class="row mt-3 mb-6" >
+				<div class="col-12">
+
+					{% if page.citation %}
+					<h4>Citation</h4>
+					<div id="cite-this">
+						<div class="highlighter-rouge"> <div class="highlight"> <code class="pre highlight border-brooke"> {{page.citation}}</code></div></div>
+					</div>
+					{% endif %}
+					<br>
+					{% if page.bibtex %}
+					<h4>BibTeX</h4>
+					<div id="cite-bibtex">
+						<div class="language-bibtex highlighter-rouge"> <div class="highlight border-brooke"> <pre class="highlight mb-0">{{ page.bibtex }}</pre></div></div>
+					</div>
+					{% else %}
+					<h4>Cite this Article</h4>
+					<div id="cite-this2">
+						<div class="language-bibtex highlighter-rouge"> <div class="highlight border-brooke"> <pre class="highlight mb-0">@misc{ryan-{{ page.date | date: "%Y" }}-{{ page.slug }},
+  author = { {{page.authorsfull}} },
+  title = { {{ page.title }} },
+  url = {https://brookekryan.com{{page.permalink}}},
+  year = { {{page.date | date: "%Y"}} },
+}</pre></div></div>
+					</div>{% endif %}
+
+				</div>
+			</div>
 <!--			{% if site.mailchimp-list %}-->
 <!--			<div class="border p-5 bg-lightblue">-->
 <!--				<div class="row justify-content-between">-->
