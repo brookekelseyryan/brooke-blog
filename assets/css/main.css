@@ -125,6 +125,11 @@ address {
   font-style: normal;
   line-height: inherit; }
 
+.bibliography {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
 ol,
 ul,
 dl {

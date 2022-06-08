@@ -15,6 +15,7 @@ group :jekyll_plugins do
     gem 'jekyll-sitemap'
     gem 'jekyll-paginate'
     gem 'jekyll-seo-tag'
-    gem 'github-pages'
+    gem 'jekyll-scholar', '~> 7.1.0'
+    gem 'bibtex-ruby', '~> 6.0'
 end
 gem "webrick", "~> 1.7"

@@ -18,6 +18,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-scholar
 
 courses:
   CS-141:
@@ -111,6 +112,11 @@ defaults:
 # Syntax
 markdown: kramdown
 highlighter: rouge
+
+# Scholar
+scholar:
+  style: custom
+
 
 # Paginate
 #gems: [jekyll-paginate]
