@@ -111,7 +111,7 @@ description: "My name is Brooke Ryan. I'm currently a graduate student at UC Irv
             {% if page.thumbnail %}
             <div class="col-md-3 pr-0 text-right">
                 <a href="{{site.baseurl}}{{page.url}}">
-                    <img class="w-100 border-brooke" src="{% if page.thumbnail contains "://" %}{{ page.thumbnail }}{% else %}{{ page.thumbnail | absolute_url }}{% endif %}" alt="{{ page.title }}">
+                    <img class="w-100 border-brooke" src="{{ page.thumbnail }}" alt="{{ page.title }}">
                 </a>
             </div>
             {% endif %}
