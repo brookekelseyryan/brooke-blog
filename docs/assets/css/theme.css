@@ -1274,7 +1274,9 @@ iframe.youtube {
 	color: #bbbbbb;
 }
 .highlight {
-	background-color: #f8f8f8;
+	/*background-color: #f8f8f8;*/
+	/*background-color: #EEF1F2;*/
+	background-color: #f7f6f6;
 }
 
 /*Ghost Animation*/

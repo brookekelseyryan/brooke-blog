@@ -476,13 +476,18 @@ mark,
 code {
   font-size: 1rem;
   padding: 0.25rem;
-  background: #f8f8f8;
+  /*background: #f8f8f8;*/
+  /*background: #EEF1F2;*/
+  /*background: #f7f6f6;*/
+  background: #e5e1e1;
   word-break: break-word;
 }  a > code {
     color: inherit; }
 
 code.pre {
-  background: #f8f8f8;
+  /*background: #f8f8f8;*/
+  /*background: #EEF1F2;*/
+  background: #f7f6f6;
   padding: 10px;
   font-size:14px;
   display: block;
