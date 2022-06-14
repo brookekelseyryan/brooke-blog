@@ -746,14 +746,6 @@ article {
 	font-family: "Space Mono", serif !important;
 }
 
-.course-subtitle {
-	font-family: Georgia,Times,"Times New Roman",serif;
-	font-size: 2rem;
-	font-weight: 300;
-	line-height: 1.15;
-	color: #222222;
-}
-
 article figure img {
 	margin: auto;
 	border-style: solid;
@@ -824,19 +816,67 @@ article h1,article h2,article h3,article h4,article h5,article h6,article .h1,ar
 	font-weight:600;
 }
 
+/*course content*/
 course {
-	font-size:16px;
+	font-size:20px;
 	line-height:1.86;
-	font-family: "Segoe UI", "Helvetica Neue", "Arial";
+	font-family: 'Fraunces', serif;
+	font-weight: 300;
+	/*font-family: Lora;*/
 }
 .course-headline {
-	font-family: Georgia,Times,"Times New Roman",serif;
+	/*font-family: "Corben", serif !important;*/
 	font-size: 3.2rem;
 	font-weight: 400;
 	line-height: 1.15;
 	color: #222222;
 }
-course p,course pre,course figure,course img,course blockquote,course iframed,course embed {
+
+.course-subtitle {
+	/*color: #7F7F7F;*/
+	font-weight: 325;
+	font-family: "Space Mono", serif !important;
+}
+
+course figure img {
+	margin: auto;
+	border-style: solid;
+	display: block;
+}
+course figure {
+	margin-bottom: 1.5rem;
+}
+course figure figcaption {
+	margin-top: 0.5rem;
+	font-size: 15px;
+	font-weight: 400;
+	text-align: center;
+	color: #757575;
+	font-family: "Space Mono", serif;
+	/*font-family: "Segoe UI", "Helvetica Neue", "Arial";*/
+}
+course a:not(.no-underline) {
+	/*border-bottom: 3px solid #a5635f;*/
+	color: inherit;
+	border-bottom: 2px solid #F0C4B1;
+
+	/*border-bottom: 2px solid #e4cfd7;*/
+	/*text-decoration: underline; 3C2E36*/
+	/*color:#805A63 FFE7EF ;*/
+}
+
+course a:hover {
+	/*border-bottom: 3px solid #6b1c0c FFE7EF ccb8bf;*/
+	/*border-bottom: 2px solid #ffe7ef;*/
+	filter: none !important;
+	border-bottom: none;
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23F0C4B1' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+	background-position: 0 100%;
+	background-size: auto 6px;
+	background-repeat: repeat-x;
+	text-decoration: none;
+}
+course p,course pre,course img,course blockquote,course iframed,course embed {
 	margin-bottom:2rem;
 }
 course blockquote {
@@ -855,12 +895,52 @@ course blockquote:before {
 	float:left;
 	line-height:1;
 }
+
 course h1,course h2,course h3,course h4,course h5,course h6,course .h1,course .h2,course .h3,course .h4,course .h5,course .h6 {
-	margin-bottom:0.5rem;
+	margin-bottom:2rem;
 	margin-top:2rem;
-	font-weight:375;
-	font-family:Georgia,Times,"Times New Roman",serif;
+	font-weight:600;
 }
+
+course table tbody tr:nth-of-type(even) {
+	background-color: #f4f1f1;
+	/*background-color: rgba(0, 0, 0, 0.05);*/
+}
+
+course table tbody tr:hover {
+	/*background-color: #e5caca;*/
+	background-color: rgba(0, 0, 0, 0.075);
+}
+
+course table {
+	width: 100%;
+	margin-bottom: 1rem;
+	background-color: transparent;
+	border: 1px solid #cfc9c9; }
+course table th, td {
+	border: 1px solid #cfc9c9;
+	padding: 0.75rem;
+	vertical-align: top;
+}
+course table thead th {
+	vertical-align: bottom;
+	border-bottom: 1px solid #cfc9c9;
+	background-color: #e5e1e1;
+	font-weight: 600;
+}
+course table thead td {
+	border-bottom-width: 2px;
+}
+course table tbody + tbody {
+	border-top: 2px solid #cfc9c9;
+}
+
+
+/*{: class="table-striped table-hover table-bordered"}*/
+
+
+/*end course content*/
+
 
 .alertbar {
 	box-shadow: 0 -3px 10px 0 rgba(0, 0, 0, .0785);

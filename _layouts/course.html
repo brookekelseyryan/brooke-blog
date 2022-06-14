@@ -1,75 +1,106 @@
 ---
 layout: default
 ---
-{% assign course = site.courses[page.course] %}
 <canvas id="canvas"> </canvas>
+
+
 <div class="container bg-lightpink">
-<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
-		<div class="h-100 tofront">
-			<div class="row {% if page.image %} justify-content-between {% else %} justify-content-center {% endif %}">
-				<div class="{% if page.image %} col-md-6 {% else %} col-sm-11 {% endif %} pr-0 pr-md-4 pt-4 align-self-center">
-					<h1 class="display-4 article-headline">{{ course.name }}</h1>
-					<h2 class="display-5 course-subtitle mb-4">{{course.role}}</h2>
-					<div class="d-flex ">
-						{% if course.avatar %}
-						<img class="rounded-circle" src="{{site.baseurl}}/{{course.avatar}}" alt="{{course.name}}" width="70"/>
-						{% endif %}
-						<small class="ml-3"> {{ course.institution }}, {{course.department}} <span></span>
-							<span class="text-muted d-block mt-1">{{course.quarter}}</span>
-						</small>
-					</div>
-					<p class="excerpt" style="margin-top: 20px">{{course.description}}</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+    <div class="container-lg pt-4 pb-4">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
 
+                {% if page.has-code == true %}
+                    <h1 class="display-4 mb-3 article-headline">{{ page.code | replace: "-", " " }}: {{ page.title }}</h1>
+                {% else %}
+                    <h1 class="display-4 mb-3 article-headline">{{ page.title }}</h1>
+                {% endif %}
+                <h4 class="display-6 article-subtitle mb-4 font-weight-normal">{{ page.role }}</h4>
 
-<div class="container-lg pt-4 pb-4 bg-lightpink">
-	<div class="row justify-content-center" style="margin-top: -1em">
+                {% if page.image %}
+                <div class="pr-0 align-self-center">
+                    <img class="rounded border-brooke" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+                </div>
+                {% endif %}
 
-		<!-- Share -->
-<!--		<div class="col-sm-auto">-->
-<!--			<div class="sticky-top sticky-top-offset text-center">-->
-<!--				<div class="text-muted">-->
-<!--					Office Hours-->
-<!--				</div>-->
-<!--				<div class="share d-inline-block">-->
-<!--					&lt;!&ndash; AddToAny BEGIN &ndash;&gt;-->
-<!--					<div class="a2a_kit a2a_kit_size_32 a2a_default_style">-->
-<!--						<a class="a2a_dd" href="https://www.addtoany.com/share"></a>-->
-<!--						<a class="a2a_button_facebook"></a>-->
-<!--						<a class="a2a_button_twitter"></a>-->
-<!--					</div>-->
-<!--					<script async src="https://static.addtoany.com/menu/page.js"></script>-->
-<!--					&lt;!&ndash; AddToAny END &ndash;&gt;-->
-<!--				</div>-->
-<!--			</div>-->
-<!--		</div>-->
+<!--                page avatar-->
+                <div class="col-md-12 pr-0 pr-md-4 pt-3 pb-5 align-self-center">
+                    <div class="d-flex align-items-center">
+                        {% if page.avatar %}
+                        <img class="rounded-circle" src="{{site.baseurl}}/{{page.avatar}}" alt="{{page.title}}" width="70"/>
+                        {% endif %}
+                        <small class="ml-3"> {{ page.institution }}, {{page.department}} <span></span>
+                            {% if page.prof %}
+                                <span class="text-muted d-block mt-1">{{page.prof}}</span>
+                            {% endif %}
+                            {% if page.catalog %}
+                                <span class="text-muted d-block mt-1"><a href="{{page.catalog}}">{{page.code | replace: "-", " "}}</a> | {{page.quarter}}</span>
+                            {% else %}
+                                <span class="text-muted d-block mt-1">{{page.quarter}}</span>
+                            {% endif %}
+                        </small>
+                    </div>
+                </div>
 
-		<div class="col-sm-9">
-            
+                <h4>Description</h4>
+                <p class="excerpt" >{{page.description}}</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-10">
             <!-- Article -->
-			<course class="article-post">
-			{{ content }}                
-			</course>
+            <course class="article-post">
+<!--                <hr>-->
+                {{ content }}
+            </course>
 
-			{% assign posts = site.posts | where:"courses", page.course %}
-			{% if posts.size > 0%}
+            {% if page.related-content == true %}
+                <div class="pt-3">
+                    <h2>Related Content</h2>
+                    <course> <p>Here are some educational posts from <a href="{{site.baseurl}}/writing/index.html#blog">my blog</a> that relate to topics that we cover in the course (some of them I even wrote specifically <em>for</em> the course!) I'd recommend that students read them, particularly if the topic is one you are struggling with understanding. </p></course>
+                    <h4 class="font-weight-600 spanborder"><span><a href="{{site.baseurl}}/writing/index.html">Posts</a> tagged "{{page.title}}"</span></h4>
+                    {% assign posts = site.posts | where:"courses", page.code %}
+                    {% for post in posts %}
+                        {% include main-loop-card.html %}
+                    {% endfor %}
+                </div>
+            {% endif %}
 
-			<h4 class="font-weight-bold spanborder"><span>Posts related to {{course.name}}</span></h4>
-<!--			{% assign posts = site.posts | where:"courses", page.course %}-->
-			{% for post in posts %}
-			{% include main-loop-card.html %}
-			{% endfor %}
+            {% if page.related-research == true %}
+<!--            <hr>-->
+                <div class="pt-3">
+<!--                    <h2>Related Research</h2>-->
+<!--                    <course> <p>Below, I've included published research related to my work in the course.</p></course>-->
+                    <h4 class="font-weight-600 spanborder"><span><a href="{{site.baseurl}}/research/index.html">Publications</a> tagged "{{page.title}}"</span></h4>
+                    {% assign publications = site.publications | where:"courses", page.code %}
+                    {% for page in publications %}
+                    {% include pub-loop-card.html %}
+                    {% endfor %}
+                </div>
+            {% endif %}
 
-			{% endif %}
+            {% if page.related-media == true %}
+            <!--            <hr>-->
+            <div class="pt-3">
+                <!--                    <h2>Related Research</h2>-->
+                <!--                    <course> <p>Below, I've included published research related to my work in the course.</p></course>-->
+                <h4 class="font-weight-600 spanborder"><span>Related <a href="{{site.baseurl}}/media/index.html">Media</a></span></h4>
+                {% assign medias = site.media | where:"courses", page.code %}
+                {% assign mediaz = medias | sort: 'date' | reverse %}
+                {% for post in mediaz %}
+                {% include media-loop-card.html %}
+                {% endfor %}
+            </div>
+            {% endif %}
 
-		</div>
+            <div class="pb-6"></div>
+        </div>
+    </div>
 
-        
-        
-	</div>
+
+
 </div>
-

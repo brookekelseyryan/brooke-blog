@@ -3,6 +3,7 @@ layout: post
 title: "How to Find an Easy First Issue in an Open-Source GitHub Project"
 subtitle: "Confused about how to find an easy first issue to contribute to? I wrote a guide that won't leave newcomers in the dust for this crucial first step."
 categories: [software engineering, github, open source]
+courses: [SWE-265P]
 author: brooke
 image: assets/images/brookekryan_com_photography_pinkbook_pro.jpg
 permalink: "/blog/how-to-find-easy-first-issue-github.html"

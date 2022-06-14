@@ -27,7 +27,7 @@
     {% if page.thumbnail %}
     <div class="col-md-3 pr-0 text-right">
         <a class="no-a-hover" href="{{site.baseurl}}{{post.url}}">
-            <img class="w-100 border-brooke" src="{% if post.thumbnail contains "://" %}{{ page.thumbnail }}{% else %}{{ site.baseurl }}/{{ page.thumbnail }}{% endif %}" alt="{{ page.title }}">
+            <img class=" w-100 border-brooke" src="{% if post.thumbnail contains "://" %}{{ page.thumbnail }}{% else %}{{ site.baseurl }}/{{ page.thumbnail }}{% endif %}" alt="{{ page.title }}">
         </a>
     </div>
     {% endif %}
