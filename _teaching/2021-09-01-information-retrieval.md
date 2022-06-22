@@ -11,7 +11,7 @@ avatar: "assets/images/UCI.png"
 description: "This course exposes students to principal concepts related to information retrieval, including text analyzers (e.g., stemming and tokenization), text indexing, inverted index, search (boolean expressions, phrase search), and ranking. It will also cover topics of Web search and vertical search, with related techniques such as crawling and search engine optimization. A significant part of the course is to implement a search engine using Java."
 role: Teaching Assistant
 prof: <a href="https://www.ics.uci.edu/~lopes/">Prof. Cristina Videira Lopes</a>
-related-content: false
+related-content: true
 ---
 # INF 141 Syllabus Brooke 
 

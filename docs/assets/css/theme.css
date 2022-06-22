@@ -902,24 +902,57 @@ course h1,course h2,course h3,course h4,course h5,course h6,course .h1,course .h
 	font-weight:600;
 }
 
-course table tbody tr:nth-of-type(even) {
-	background-color: #f4f1f1;
-	/*background-color: rgba(0, 0, 0, 0.05);*/
-}
+/*course table tbody tr:nth-of-type(even) {*/
+/*	background-color: #f1f0f0;*/
+/*	!*background-color: rgba(0, 0, 0, 0.05);*!*/
+/*}*/
 
 course table tbody tr:hover {
 	/*background-color: #e5caca;*/
-	background-color: rgba(0, 0, 0, 0.075);
+	background-color: #e5e1e1;
 }
 
+course table tbody td span {
+	/*background-color: #FFFAFA;*/
+	font-size: 95%;
+	font-weight: 500;
+	display: inline-block;
+	padding: 0.25em 0.4em;
+	line-height: 1;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: 0.25rem;
+}
+
+.light {
+	font-weight: 300;
+	padding: 0;
+}
+
+.due, .exam {
+	background-color: #F0C3B1;
+	/*font-size: 95%;*/
+	/*font-weight: 500;*/
+	/*display: inline-block;*/
+	/*padding: 0.25em 0.4em;*/
+	/*line-height: 1;*/
+	/*text-align: center;*/
+	/*white-space: nowrap;*/
+	/*vertical-align: baseline;*/
+	/*border-radius: 0.25rem;*/
+}
+
+
 course table {
+	font-size: 15px;
 	width: 100%;
 	margin-bottom: 1rem;
 	background-color: transparent;
 	border: 1px solid #cfc9c9; }
 course table th, td {
 	border: 1px solid #cfc9c9;
-	padding: 0.75rem;
+	padding: 0.5rem;
 	vertical-align: top;
 }
 course table thead th {
@@ -933,6 +966,10 @@ course table thead td {
 }
 course table tbody + tbody {
 	border-top: 2px solid #cfc9c9;
+}
+
+.course-row-color-week {
+	background-color: #f4f3f3;
 }
 
 

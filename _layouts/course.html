@@ -8,7 +8,6 @@ layout: default
     <div class="container-lg pt-4 pb-4">
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-10">
-
                 {% if page.has-code == true %}
                     <h1 class="display-4 mb-3 article-headline">{{ page.code | replace: "-", " " }}: {{ page.title }}</h1>
                 {% else %}
@@ -34,15 +33,18 @@ layout: default
                             {% endif %}
                             {% if page.catalog %}
                                 <span class="text-muted d-block mt-1"><a href="{{page.catalog}}">{{page.code | replace: "-", " "}}</a> | {{page.quarter}}</span>
+                            {% elsif page.meeting %}
+                                <span class="text-muted d-block mt-1">{{page.meeting}} | {{page.quarter}}</span>
                             {% else %}
                                 <span class="text-muted d-block mt-1">{{page.quarter}}</span>
                             {% endif %}
                         </small>
                     </div>
                 </div>
-
-                <h4>Description</h4>
+                <h4>Catalogue Description</h4>
                 <p class="excerpt" >{{page.description}}</p>
+
+
 
             </div>
 
@@ -50,18 +52,31 @@ layout: default
 
     </div>
 
+
     <div class="row justify-content-center">
         <div class="col-md-12 col-lg-10">
+
+            <hr>
             <!-- Article -->
             <course class="article-post">
+
+                {% if page.navbar %}
+                <div class="fraunces">
+                    <h1>Course Pages 🖥</h1>
+                    {% for thing in page.navbar %}
+                    <li><a href="{{thing[1]}}">{{thing[0]}}</a></li>
+                    {% endfor %}
+                </div>
+                {% endif %}
+
 <!--                <hr>-->
                 {{ content }}
             </course>
 
             {% if page.related-content == true %}
                 <div class="pt-3">
-                    <h2>Related Content</h2>
-                    <course> <p>Here are some educational posts from <a href="{{site.baseurl}}/writing/index.html#blog">my blog</a> that relate to topics that we cover in the course (some of them I even wrote specifically <em>for</em> the course!) I'd recommend that students read them, particularly if the topic is one you are struggling with understanding. </p></course>
+                    <h1>Related Content 📔</h1>
+                    <course> <p>Here are some educational posts from <a href="{{site.baseurl}}/writing/index.html#blog">my blog</a> that relate to topics that we cover in the course (some of them I even wrote specifically <em>for</em> the course!) I'd recommend that students read them, particularly if the topic is one you are struggling to understand. </p></course>
                     <h4 class="font-weight-600 spanborder"><span><a href="{{site.baseurl}}/writing/index.html">Posts</a> tagged "{{page.title}}"</span></h4>
                     {% assign posts = site.posts | where:"courses", page.code %}
                     {% for post in posts %}
@@ -88,7 +103,7 @@ layout: default
             <div class="pt-3">
                 <!--                    <h2>Related Research</h2>-->
                 <!--                    <course> <p>Below, I've included published research related to my work in the course.</p></course>-->
-                <h4 class="font-weight-600 spanborder"><span>Related <a href="{{site.baseurl}}/media/index.html">Media</a></span></h4>
+                <h4 class="font-weight-600 spanborder"><span>Related <a href="{{site.baseurl}}/media/index.html">Media 🎬</a></span></h4>
                 {% assign medias = site.media | where:"courses", page.code %}
                 {% assign mediaz = medias | sort: 'date' | reverse %}
                 {% for post in mediaz %}

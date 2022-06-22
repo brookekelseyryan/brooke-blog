@@ -12,12 +12,16 @@ layout: default
 			<div class="col-md-12 col-lg-9">
 
 	<h1 class="display-4 mb-3 article-headline">{{ page.title }}</h1>
-	<h4 class="display-6 article-subtitle mb-4">{{ page.subtitle }}</h4>
-	{% if page.image %}
+	<h4 class="display-6 article-subtitle mb-4 text-muted">{{ page.subtitle }}</h4>
+
 	<div class="pr-0 align-self-center">
+		{% if page.youtube %}
+		<iframe class="youtube rounded border-brooke" src="{{ page.youtube }}" title="{{ page.title }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		{% elsif page.image %}
 		<img class="rounded border-brooke" src="{% if page.image contains "://" %}{{ page.image }}{% else %}{{ site.baseurl }}/{{ page.image }}{% endif %}" alt="{{ page.title }}">
+		{% endif %}
 	</div>
-	{% endif %}
+
 	<div class="col-md-8 pr-0 pr-md-4 pt-4 pb-4 align-self-center">
 		<!--					<p class="text-uppercase font-weight-bold">-->
 		<!--                        <span class="catlist">-->

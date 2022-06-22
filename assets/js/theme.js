@@ -574,6 +574,15 @@ $(function() {
      }
  }
 
+function isEven(n) {
+
+ return n % 2 === 0;
+}
+
+function isOdd(n) {
+ return Math.abs(n % 2) === 1;
+}
+
  /**
   * Onload function is executed whenever the page is done loading, initializes the application
   */
@@ -586,4 +595,44 @@ $(function() {
 
      //Start the initial loop function for the first time
      application.loop();
+
+    /*
+    * JavaScript for course table
+    */
+     // Color each row based on the week
+     let rows = document.querySelectorAll('course table tbody tr')
+
+     rows.forEach(function(row) {
+         if (isEven(parseInt(row.textContent))) {
+             row.classList.add('course-row-color-week')
+         }
+     })
+
+     // Cells
+     // let cells = document.querySelectorAll('course table tbody td span')
+     //
+     // cells.forEach(function(cell) {
+     //     // if (cell.textContent.includes('Brooke')) {
+     //     //     cell.style.background = '#FFE7E7'
+     //     // }
+     //
+     //     // if (cell.textContent.toLowerCase().includes('due')) {
+     //     //     // cell.style.background = '#f5d7cc'
+     //     //     cell.style.background = '#f7dfd6'
+     //     //     cell.style.fontWeight = '500'
+     //     // }
+     //
+     //     // if (cell.textContent.toLowerCase().includes('exam')) {
+     //     //     cell.style.background = '#f7dfd6'
+     //     //     cell.style.fontWeight = '500'
+     //     // }
+     //
+     // })
  };
+
+
+
+
+
+
+

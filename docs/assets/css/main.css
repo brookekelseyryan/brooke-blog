@@ -4071,6 +4071,14 @@ input[type="button"].btn-block {
     text-decoration: none;
     background-color: #d1154b; }
 
+.badge-course {
+  /*color: #212529;*/
+  background-color: #FFFAFA;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
 .badge-light {
   color: #212529;
   background-color: #f8f9fa; }
