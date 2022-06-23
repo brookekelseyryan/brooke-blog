@@ -2,7 +2,7 @@
 layout: course
 code: ICS-33
 has-code: true
-permalink: "/teaching/intermediate-programming.html"
+source: "https://brookekryan.com/ICS33-S22"
 title: Intermediate Programming
 institution: UC Irvine
 department: Donald Bren School of Information and Computer Sciences

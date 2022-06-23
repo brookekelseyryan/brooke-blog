@@ -15,6 +15,22 @@ permalink: "/teaching/"
                 <div class="row">
                     <div class="col-md-3 mb-4 mb-md-0"><img alt="{{ course.title }}" src="{{site.baseurl}}/{{ course.avatar }}" class="rounded-circle" height="80" width="80"></div>
                     <div class="col-md-9">
+                        {% if course.source %}
+                        <a href="{{ course.source }}">
+                            {% if course.has-code == true %}
+                            <h4 class="text-dark mb-0">{{ course.code | replace: "-", " " }}: {{ course.title }} </h4>
+                            {% else %}
+                            <h4 class="text-dark mb-0">{{ course.title }} </h4>
+                            {% endif %}
+                            <div>
+                                <small class="font-weight-normal">{{ course.institution }}, </small>
+                                <small class="font-weight-normal">{{ course.department }}</small>
+                                <br>
+                                <small class="font-weight-normal">{{ course.quarter }} </small> <br>
+                            </div>
+                            <div class="excerpt">{{ course.description }}</div>
+                        </a>
+                        {% else %}
                         <a href="{{site.baseurl}}/teaching/{{ course.title | slugify }}.html">
                             {% if course.has-code == true %}
                             <h4 class="text-dark mb-0">{{ course.code | replace: "-", " " }}: {{ course.title }} </h4>
@@ -29,6 +45,7 @@ permalink: "/teaching/"
                             </div>
                             <div class="excerpt">{{ course.description }}</div>
                         </a>
+                        {% endif %}
                     </div>
                 </div>
             </div>
