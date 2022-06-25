@@ -2,6 +2,7 @@
 layout: course
 code: CS-141
 has-code: true
+source: "https://brookekryan.com/CS121-F21/"
 permalink: "/teaching/information-retrieval.html"
 title: Information Retrieval
 institution: UC Irvine
