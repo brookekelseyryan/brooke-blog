@@ -44,7 +44,7 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 ::selection {
-  background: #FFE7E7;
+  background: #e6bb98;
 }
 
 *,
@@ -92,7 +92,7 @@ body {
   color: #212529;
   text-align: left;
   /*background-color: #fffcfd;*/
-  background-color: #fffafa;
+  background-color: #FDFAF6;
 }
 
 [tabindex="-1"]:focus {
@@ -479,7 +479,7 @@ code {
   /*background: #f8f8f8;*/
   /*background: #EEF1F2;*/
   /*background: #f7f6f6;*/
-  background: #e5e1e1;
+  background: #e9e8dc;
   word-break: break-word;
 }  a > code {
     color: inherit; }
@@ -487,7 +487,7 @@ code {
 code.pre {
   /*background: #f8f8f8;*/
   /*background: #EEF1F2;*/
-  background: #f7f6f6;
+  background: #fefdfb;
   padding: 10px;
   font-size:14px;
   display: block;
@@ -1826,7 +1826,7 @@ fieldset:disabled a.btn {
   border-color: #212529; }
 
 .btn-icon-brooke:hover{
-  background-color: #FFE7E7;
+  background-color: #e6bb98;
 }
 .btn-icon {
   color: #fff;
@@ -1852,7 +1852,7 @@ fieldset:disabled a.btn {
 
 .btn-brooke {
   color: #212529;
-  background-color: #FFFAFA;
+  background-color: #FDFAF6;
   border-color: #212529; }
 /*.btn-brooke:hover{*/
 /*  background-color: #2e2429;*/
@@ -3392,7 +3392,7 @@ input[type="button"].btn-block {
   display: block;
   padding: 0.8rem 1rem; }
   .nav-link:hover, .nav-link:focus {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23F0C4B1' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23e6bb98' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");*/
     background-position: 0 100%;
     background-size: auto 6px;
     background-repeat: repeat-x;
@@ -4073,7 +4073,7 @@ input[type="button"].btn-block {
 
 .badge-course {
   /*color: #212529;*/
-  background-color: #FFFAFA;
+  background-color: #FDFAF6;
   font-size: 16px;
   font-weight: 500;
 }
@@ -5253,7 +5253,7 @@ button.bg-dark:focus {
   background-color: #0a0c0d !important; }
 
 .bg-white {
-  background-color: #FFFAFA;
+  background-color: #FDFAF6;
   /*background-color: #fffcfd !important; */
 }
 
@@ -5313,11 +5313,11 @@ button.bg-orange:focus {
 /*todo: idk why this only lets me change color here */
 .bg-lightblue {
   /*background-color: #F4ECF0 !important; */
-  background-color: #FFE7E8;
+  background-color: #cac9b3;
 }
 
 .bg-lightpink {
-  background-color: #FFFAFA;
+  background-color: #FDFAF6;
 }
 
 .bg-mauve {
@@ -5329,7 +5329,7 @@ button.bg-lightblue:focus {
   background-color: #c6e2d0 !important; }
 
 .bg-white {
-  background-color: #FFFAFA;
+  background-color: #FDFAF6;
   /*background-color: #fffcfd !important; */
 }
 
