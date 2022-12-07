@@ -26,6 +26,9 @@ Welcome to the `~code~` behind my [blog](https://brookekryan.com/)!
 5. Save your file, then wait another 3 seconds or so. 
 6. Your changes *should* be visible again on the page. Sometimes, if you change an asset though, you might need to Ctrl+C and start again from step 1. 
 
+### To push changes to GitHub
+1. Run the command `bundle exec jekyll serve --verbose`. This will update the `docs` folder.
+2. Push the compiled `docs` folder to GitHub. 
 
 
 ## Credits
