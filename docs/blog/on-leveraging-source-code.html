@@ -75,16 +75,22 @@
     <!-- Navbar -->
     <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="/index.html"><strong>Brooke K. Ryan</strong></a>
+        <a class="navbar-brand" href="/index.html">Brooke K. Ryan</a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse collapse" id="navbarColor02" style="">
-            <ul class="navbar-nav mr-auto d-flex align-items-center">
+            <ul class="navbar-nav align-items-center">
                <!--  Replace menu links here -->
 
 <li class="nav-item">
-<a class="nav-link" href="/index.html">Home</a>
+<a class="" href="/index.html">
+    <img style="margin-right: 1rem; float:left" alt=" " src="/assets/images/brain.png" class="nav-img" height="62" width="62">
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="/index.html">About</a>
 </li>
 
 <li class="nav-item">
@@ -94,6 +100,7 @@
 <li class="nav-item">
 <a class="nav-link" href="/writing/index.html">Writing</a>
 </li>
+
 
 <!--<li class="nav-item">-->
 <!--    <a class="nav-link" href="/about.html">About</a>-->
@@ -116,7 +123,7 @@
 </li>
 
 <li class="nav-item">
-<a class="nav-link" href="/assets/docs/Brooke_Ryan_CV.pdf">CV</a>
+<a class="nav-link pr-0" href="/assets/docs/Brooke_Ryan_CV.pdf">CV</a>
 </li>
             </ul>
 <!--            <ul class="navbar-nav ml-auto d-flex align-items-center">-->
@@ -160,7 +167,7 @@ var documents = [{
     "id": 5,
     "url": "http://localhost:4000/research/",
     "title": "Research",
-    "body": "        Publications:       {% for page in site. publications %}      {% include pub-loop-card. html %}      {% endfor %}  Projects:   {% assign projs = site. projects | sort: 'date' | reverse %}  {% for page in projs %}  {% include pub-loop-card. html %}  {% endfor %}              {% include sidebar-scientist. html %}    "
+    "body": "                              Research:                       How do our distinctly human cognitive capabilities arise from the connections between the billions of neurons in the brain? What are the computational properties that enable precise yet generalizable knowledge about the world to be represented amongst neural connections? How does the symphony of internal experience arise from the architectures governing discrete regions of brain function? Such are the questions that fundamentally drive my curiosity and passion for exploring the brain, mind, and artificial representations of intelligence.                     My research leverages computational, behavioral, and neuroimaging techniques aimed at understanding the mechanisms that give rise to our uniquely human cognitive abilities. I am particularly drawn to areas where human intelligence supersedes that of state-of-the-art Artificial Intelligence, such as language acquisition, one-/few-shot learning, memory, and consciousness.                                                                               &lt;/div&gt;        	      &lt;/div&gt;    &lt;/div&gt;  &lt;/div&gt;        Publications:       {% for page in site. publications %}      {% include pub-loop-card. html %}      {% endfor %}  Projects:   {% assign projs = site. projects | sort: 'date' | reverse %}  {% for page in projs %}  {% include pub-loop-card. html %}  {% endfor %}              {% include sidebar-scientist. html %}    &lt;/div&gt; "
     }, {
     "id": 6,
     "url": "http://localhost:4000/teaching/",
@@ -175,7 +182,7 @@ var documents = [{
     "id": 8,
     "url": "http://localhost:4000/",
     "title": "Home",
-    "body": "Your browser doesn't support canvas  {% if page. url ==  /  %}                                Welcome!:                                 My name is Brooke Ryan. I recently obtained my M. S. in Computer Science from UC Irvine, and I'm currently working as a researcher with the Mattar Lab at UC San Diego. Prior to that, I obtained my B. S. in Mathematics-Computer Science from UC San Diego.                         I'm interested in uncovering the computational and neural basis for human intelligence—particularly in areas where Artificial Intelligence struggles, such as one-shot learning and language acquisition. This site contains my an archive of my research projects, writing, and courses I've taught.                           	            {% endif %}       Research:     {% assign research = site. publications | concat: site. projects | sort: 'date' | reverse %}    {% for page in research %}    {% if page. hidden != true %}                                  {{ page. title }}        :         {{ page. authors }}                   {{ page. abstract | strip_html | strip_newlines | truncate: 141}}                           {% if page. venue %}          {{ page. venue }}          {% else %}          {{ page. date | date: '%b %Y' }}          {% endif %}                              {% if page. thumbnail %}                                            {% endif %}                          {% include icons. html %}              {% endif %}    {% endfor %}              Publications:               {% for page in site. publications %}                           {{ page. authors_no_links }}. {{ page. title }}. {{ page. venue }}.         &lt;/li&gt;        {% endfor %}      &lt;/ol&gt;    &lt;/div&gt;  &lt;/div&gt;&lt;/div&gt;{% if site. mailchimp-list %}{% endif %}&lt;/div&gt;"
+    "body": "Your browser doesn't support canvas  {% if page. url ==  /  %}                                                                                                    welcome!                                              My name is Brooke K. Ryan. I recently obtained my M. S. in Computer Science from UC Irvine, and I'm currently working as a researcher with the Mattar Lab at UC San Diego. Prior to that, I obtained my B. S. in Mathematics-Computer Science from UC San Diego.                                                 I'm interested in uncovering the computational and neural basis for human intelligence—particularly in areas where Artificial Intelligence struggles, such as one-shot learning and language acquisition. This site contains my an archive of my research projects, writing, and courses I've taught.                                                       {% endif %}       Research:     {% assign research = site. publications | concat: site. projects | sort: 'date' | reverse %}    {% for page in research %}    {% if page. hidden != true %}                                  {{ page. title }}        :         {{ page. authors }}                   {{ page. abstract | strip_html | strip_newlines | truncate: 141}}                           {% if page. venue %}          {{ page. venue }}          {% else %}          {{ page. date | date: '%b %Y' }}          {% endif %}                              {% if page. thumbnail %}                                            {% endif %}                          {% include icons. html %}              {% endif %}    {% endfor %}              Publications:               {% for page in site. publications %}                           {{ page. authors_no_links }}. {{ page. title }}. {{ page. venue }}.         &lt;/li&gt;        {% endfor %}      &lt;/ol&gt;    &lt;/div&gt;  &lt;/div&gt;&lt;/div&gt;{% if site. mailchimp-list %}{% endif %}&lt;/div&gt;"
     }, {
     "id": 9,
     "url": "http://localhost:4000/index_backup/",
@@ -568,7 +575,7 @@ function lunr_search(term) {
         <div class="container">
         <div class="row align-items-center justify-content-between">
             <div>
-                <span class="navbar-brand mr-2 mb-0"><strong><a href="/index.html">Brooke K. Ryan</a></strong></span>
+                <span class="navbar-brand mr-2 mb-0"><a href="/index.html">Brooke K. Ryan</a></span>
                 <span style="font-family: 'Space Mono', monospace"><a href="https://github.com/brookekelseyryan/brooke-blog">Copyright © <script>document.write(new Date().getFullYear())</script></a>.</span>
 
                 <!--  Github Repo Star Btn-->

@@ -75,6 +75,10 @@ html {
   font-family: "Fraunces", serif !important;
 }
 
+.domainesanstextlight {
+  font-family: "Domaine Sans Text Light", serif !important;
+}
+
 .manrope {
   font-family: "Manrope", sans-serif !important;
 }
@@ -3387,9 +3391,11 @@ input[type="button"].btn-block {
   list-style: none; }
 
 .nav-link {
-  font-family: "Space Mono";
+  font-family: "Domaine Sans Text Light";
   /*font-family: 'DM Mono', monospace;*/
   display: block;
+  color: #212529;
+  letter-spacing: 2px;
   padding: 0.8rem 1rem; }
   .nav-link:hover, .nav-link:focus {
     /*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23e6bb98' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");*/
@@ -3584,8 +3590,8 @@ input[type="button"].btn-block {
       .navbar-expand-lg .navbar-nav .dropdown-menu {
         position: absolute; }
       .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 0.9rem;
-        padding-left: 0.9rem; }
+        padding-right: 1.3rem;
+        padding-left: 1.3rem; }
     .navbar-expand-lg > .container,
     .navbar-expand-lg > .container-fluid {
       flex-wrap: nowrap; }
@@ -3650,7 +3656,7 @@ input[type="button"].btn-block {
     color: rgba(0, 0, 0, 0.9); }
 
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.5); }
+  color: #212529; }
   .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
     color: rgba(0, 0, 0, 0.7); }
   .navbar-light .navbar-nav .nav-link.disabled {
@@ -8662,3 +8668,13 @@ html {
     align-self: baseline !important; }
   .align-self-xl-stretch {
     align-self: stretch !important; } }
+
+@font-face {
+  font-family: "Domaine Display Narrow Extrabold";
+  src: url("../fonts/DomaineDispNar-Extrabold.otf");
+}
+
+@font-face {
+  font-family: "Domaine Sans Text Light";
+  src: url("../fonts/DomaineSansText-Light.otf");
+}

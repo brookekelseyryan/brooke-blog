@@ -630,7 +630,33 @@ $(function() {
 //      // })
 //  };
 
-
+ function draw(e) {
+     const time = e * 0.001;
+     const sideCount = 14;
+     const count = sideCount * sideCount;
+     const size = 500;
+     const subSize = size / sideCount;
+     rotate(QUARTER_PI);
+     beginPath();
+     for(let i = 0; i < count; i++) {
+         const pos = iToXY(i, sideCount).div(sideCount);
+         const dt = pos.mag() / SQRT2;
+         const count2 = ceil(6 + dt * 10 + sin(time * 4.5 - dt * TAU * 2.5) * 2);
+         pos.sub(0.5).mult(size);
+         const v = pos._.add(subSize);
+         // beginPath();
+         for(let j = 0; j < count2; j++) {
+             const t = j / (count2 - 1);
+             const v2 = Vector.fa(t * HALF_PI + PI, 1);
+             line(
+                 v._.add(v2._.mult(subSize * sin(dt * TAU * 2 + time * 3.7))),
+                 v._.add(v2._.mult(subSize * sin(dt * TAU + time * 2.7)))
+             );
+         }
+         // stroke(hsl(360 * dt, 100, 50));
+     }
+     stroke();
+ }
 
 
 
