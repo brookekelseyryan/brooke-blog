@@ -1,0 +1,7 @@
+{
+  "name": "brookekelseyryan.github.io",
+  "version": "1.0.0",
+  "devDependencies": {
+    "pixi.js": "^7.0.5"
+  }
+}
