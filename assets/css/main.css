@@ -8678,3 +8678,39 @@ html {
   font-family: "Domaine Sans Text Light";
   src: url("../fonts/DomaineSansText-Light.otf");
 }
+
+@font-face {
+  font-family: "Domaine Sans Text Medium Italic";
+  src: url("../fonts/DomaineSansText-MediumItalic.otf");
+}
+
+@font-face {
+  font-family: "Domaine Sans Text Medium";
+  src: url("../fonts/DomaineSansText-Medium.otf");
+}
+
+@font-face {
+  font-family: "Domaine Display";
+  src: url("../fonts/DomaineDisp-Regular.otf");
+}
+
+@font-face {
+  font-family: "Domaine Display Semibold";
+  src: url("../fonts/DomaineDisp-Semibold.otf");
+}
+
+.domainedisplay {
+  font-family: "Domaine Display", serif !important;
+}
+
+.domainedisplaysemibold {
+  font-family: "Domaine Display Semibold", serif !important;
+}
+
+.domainesanstextmediumitc {
+  font-family: "Domaine Sans Text Medium Italic", serif !important;
+}
+
+.domainesanstextmedium {
+  font-family: "Domaine Sans Text Medium", serif !important;
+}
