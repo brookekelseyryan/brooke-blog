@@ -96,7 +96,7 @@ body {
   color: #212529;
   text-align: left;
   /*background-color: #fffcfd;*/
-  background-color: #FDFAF6;
+  background-color: #fffafa;
 }
 
 [tabindex="-1"]:focus {
@@ -1856,7 +1856,7 @@ fieldset:disabled a.btn {
 
 .btn-brooke {
   color: #212529;
-  background-color: #FDFAF6;
+  background-color: #fffafa;
   border-color: #212529; }
 /*.btn-brooke:hover{*/
 /*  background-color: #2e2429;*/
@@ -4079,7 +4079,7 @@ input[type="button"].btn-block {
 
 .badge-course {
   /*color: #212529;*/
-  background-color: #FDFAF6;
+  background-color: #fffafa;
   font-size: 16px;
   font-weight: 500;
 }
@@ -5259,7 +5259,7 @@ button.bg-dark:focus {
   background-color: #0a0c0d !important; }
 
 .bg-white {
-  background-color: #FDFAF6;
+  background-color: #fffafa;
   /*background-color: #fffcfd !important; */
 }
 
@@ -5323,7 +5323,7 @@ button.bg-orange:focus {
 }
 
 .bg-lightpink {
-  background-color: #FDFAF6;
+  background-color: #fffafa;
 }
 
 .bg-mauve {
@@ -5335,7 +5335,7 @@ button.bg-lightblue:focus {
   background-color: #c6e2d0 !important; }
 
 .bg-white {
-  background-color: #FDFAF6;
+  background-color: #fffafa;
   /*background-color: #fffcfd !important; */
 }
 

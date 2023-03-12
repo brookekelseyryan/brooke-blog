@@ -139,7 +139,7 @@ a {
 	/*border-radius:0.3rem;*/
 }
 .thin-icon {
-	-webkit-text-stroke: 1px #FDFAF6;
+	-webkit-text-stroke: 1px #fffafa;
 }
 .thin-icon:hover {
 	-webkit-text-stroke: 1px #e6bb98;
@@ -985,7 +985,7 @@ course table tbody + tbody {
 	position: fixed;
 	bottom: 0;
 	left: 0;
-	background-color: #FDFAF6;
+	background-color: #fffafa;
 	width: 100%;
 	padding: 14px 0;
 	z-index: 1;
