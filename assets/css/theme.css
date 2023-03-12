@@ -762,7 +762,7 @@ article figure figcaption {
 	font-weight: 400;
 	text-align: center;
 	color: #757575;
-	font-family: "Space Mono", serif;
+	font-family: "Domaine Sans Text Light", sans-serif;
 	/*font-family: "Segoe UI", "Helvetica Neue", "Arial";*/
 }
 article a:not(.no-underline) {

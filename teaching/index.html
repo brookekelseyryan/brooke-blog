@@ -6,7 +6,7 @@ permalink: "/teaching/"
 <canvas id="canvas"> </canvas>
 
 <div class="container bg-lightpink">
-    <h4 class="font-weight-600 spanborder"><span>Courses</span></h4>
+    <h3 class="font-weight-600 spanborder"><span>Courses</span></h3>
     <div class="row gap-y listrecent listrecent listauthor">
         {% assign courses = site.teaching | sort: 'date' | reverse %}
         {% for course in courses %}
@@ -18,9 +18,9 @@ permalink: "/teaching/"
                         {% if course.source %}
                         <a href="{{ course.source }}">
                             {% if course.has-code == true %}
-                            <h4 class="text-dark mb-0">{{ course.code | replace: "-", " " }}: {{ course.title }} </h4>
+                            <h4 class="text-dark mb-0 font-weight-600">{{ course.code | replace: "-", " " }}: {{ course.title }} </h4>
                             {% else %}
-                            <h4 class="text-dark mb-0">{{ course.title }} </h4>
+                            <h4 class="text-dark mb-0 font-weight-600">{{ course.title }} </h4>
                             {% endif %}
                             <div>
                                 <small class="font-weight-normal">{{ course.institution }}, </small>
@@ -33,9 +33,9 @@ permalink: "/teaching/"
                         {% else %}
                         <a href="{{site.baseurl}}/teaching/{{ course.title | slugify }}.html">
                             {% if course.has-code == true %}
-                            <h4 class="text-dark mb-0">{{ course.code | replace: "-", " " }}: {{ course.title }} </h4>
+                            <h4 class="text-dark mb-0 font-weight-600">{{ course.code | replace: "-", " " }}: {{ course.title }} </h4>
                             {% else %}
-                            <h4 class="text-dark mb-0">{{ course.title }} </h4>
+                            <h4 class="text-dark mb-0 font-weight-600">{{ course.title }} </h4>
                             {% endif %}
                             <div>
                                 <small class="font-weight-normal">{{ course.institution }}, </small>

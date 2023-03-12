@@ -6,10 +6,10 @@
         <p class="excerpt">
             {{ post.subtitle  | strip_html | strip_newlines | truncate: 186}}
         </p>
-        <small class="d-block text-muted">
+        <small class="d-block">
             Originally posted on {{post.source-name}}
         </small>
-        <small class="text-muted">
+        <small>
             {{ post.date | date: '%b %d, %Y' }}
         </small>
     </div>
