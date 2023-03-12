@@ -139,7 +139,7 @@ a {
 	/*border-radius:0.3rem;*/
 }
 .thin-icon {
-	-webkit-text-stroke: 1px #fffafa;
+	-webkit-text-stroke: 1px #fff4f4;
 }
 .thin-icon:hover {
 	-webkit-text-stroke: 1px #e6bb98;
@@ -147,7 +147,7 @@ a {
 .btn-faicon-brooke{
 	/*font-size:1.7rem;*/
 	padding:0.15rem .7rem;
-	/*background-color: #FFE7E7;*/
+	/*background-color: #fff4f4;*/
 	color: #212529;
 	/*line-height:1.5;*/
 	/*border-radius:0.3rem;*/
@@ -915,7 +915,7 @@ course table tbody tr:hover {
 }
 
 course table tbody td span {
-	/*background-color: #FFFAFA;*/
+	/*background-color: #fff4f4;*/
 	font-size: 95%;
 	font-weight: 500;
 	display: inline-block;
@@ -986,7 +986,7 @@ course table tbody + tbody {
 	position: fixed;
 	bottom: 0;
 	left: 0;
-	background-color: #fffafa;
+	background-color: #fff4f4;
 	width: 100%;
 	padding: 14px 0;
 	z-index: 1;
@@ -1047,7 +1047,7 @@ course table tbody + tbody {
 .spanborder span {
 	border-bottom:1px solid rgba(0,0,0,0.44);
 	display:inline-block;
-	padding-bottom:20px;
+	padding-bottom:5px;
 	margin-bottom:-1px;
 }
 .a2a_default_style .a2a_svg {

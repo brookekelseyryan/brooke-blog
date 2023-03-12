@@ -89,14 +89,14 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   margin: 0;
   /*font-family: 'Satoshi', sans-serif;*/
-  font-family: "Space Mono", serif !important;
+  font-family: "Domaine Sans Text Light", serif !important;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
   color: #212529;
   text-align: left;
   /*background-color: #fffcfd;*/
-  background-color: #fffafa;
+  background-color: #fff4f4;
 }
 
 [tabindex="-1"]:focus {
@@ -108,7 +108,7 @@ hr {
   overflow: visible; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Fraunces', serif !important;
+  font-family: 'Domaine Display', serif !important;
   margin-top: 0;
   margin-bottom: 0.5rem; }
 
@@ -1856,7 +1856,7 @@ fieldset:disabled a.btn {
 
 .btn-brooke {
   color: #212529;
-  background-color: #fffafa;
+  background-color: #fff4f4;
   border-color: #212529; }
 /*.btn-brooke:hover{*/
 /*  background-color: #2e2429;*/
@@ -4079,7 +4079,7 @@ input[type="button"].btn-block {
 
 .badge-course {
   /*color: #212529;*/
-  background-color: #fffafa;
+  background-color: #fff4f4;
   font-size: 16px;
   font-weight: 500;
 }
@@ -5259,7 +5259,7 @@ button.bg-dark:focus {
   background-color: #0a0c0d !important; }
 
 .bg-white {
-  background-color: #fffafa;
+  background-color: #fff4f4;
   /*background-color: #fffcfd !important; */
 }
 
@@ -5323,7 +5323,7 @@ button.bg-orange:focus {
 }
 
 .bg-lightpink {
-  background-color: #fffafa;
+  background-color: #fff4f4;
 }
 
 .bg-mauve {
@@ -5335,7 +5335,7 @@ button.bg-lightblue:focus {
   background-color: #c6e2d0 !important; }
 
 .bg-white {
-  background-color: #fffafa;
+  background-color: #fff4f4;
   /*background-color: #fffcfd !important; */
 }
 
