@@ -725,6 +725,7 @@ footer {
 .excerpt {
     color: rgba(0,0,0,0.59);
     margin-top:5px;
+	font-family: "Domaine Sans Text Light", sans-serif !important;
 }
 article {
 	font-size:20px;

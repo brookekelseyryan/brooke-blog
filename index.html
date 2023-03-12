@@ -77,7 +77,7 @@ description: "My name is Brooke Ryan. I'm recently obtained my M.S. in Computer 
 
     <div class="col-md-8 main-loop bg-lightpink">
 
-        <h4 class="domainedisplay font-weight-600 spanborder"><span><a href="{{site.baseurl}}/research/index.html">Research</a></span></h4>
+        <h3 class="domainedisplay font-weight-600 spanborder"><span><a href="{{site.baseurl}}/research/index.html">Research</a></span></h3>
 
         {% assign research = site.publications | concat: site.projects | sort: 'date' | reverse %}
         {% for page in research %}
@@ -132,7 +132,7 @@ description: "My name is Brooke Ryan. I'm recently obtained my M.S. in Computer 
 
     <div class="col-md-4 bg-lightpink">
         <div class="sticky-top sticky-top-offset mb-5">
-            <h4 class="domainesanstextmediumitc font-weight-600 spanborder"><span><a href="{{site.baseurl}}/research/index.html">publications</a></span></h4>
+            <h3 class="domainedisplay font-weight-600 spanborder"><span><a href="{{site.baseurl}}/research/index.html">Publications</a></span></h3>
             <ol class="list-featured">
                 {% for page in site.publications %}
                 <li class="mb-4 domainedisplay">
