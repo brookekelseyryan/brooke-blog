@@ -160,7 +160,7 @@ var documents = [{
     "id": 4,
     "url": "http://localhost:4000/about/",
     "title": "About",
-    "body": "                                                                                                    Biography                          Brooke is a PhD student in Psychology at Princeton University, where she is advised by Professors Uri Hasson and Thomas Griffiths. She's interested in characterizing the computational and neural basis for human intelligence—particularly in areas where Artificial Intelligence struggles, such as one-shot learning and language acquisition.                           She originally hails from sunny Southern California; there she obtained her M. S. in Computer Science at UC Irvine and B. S. in Mathematics at UC San Diego. Prior to her graduate studies, Brooke had another career as a Software Engineer, she worked as a backend Java developer for Intuit, Blizzard Entertainment, and CBS Interactive.                       &lt;/div&gt;        &lt;/div&gt;      &lt;/div&gt;    &lt;/div&gt;  &lt;/div&gt;                                &lt;/div&gt; "
+    "body": "                                                                                                    Biography                          Brooke is a PhD student in Psychology at Princeton University, where she is advised by Professor Uri Hasson. She's interested in characterizing the computational and neural basis for human intelligence—particularly in areas where Artificial Intelligence struggles, such as one-shot learning and language acquisition.                           She originally hails from sunny Southern California; there she obtained her M. S. in Computer Science at UC Irvine and B. S. in Mathematics-Computer Science at UC San Diego. Prior to her graduate studies, Brooke had another career as a Software Engineer, she worked as a backend Java developer for several years Intuit and Blizzard Entertainment.                       &lt;/div&gt;        &lt;/div&gt;      &lt;/div&gt;    &lt;/div&gt;  &lt;/div&gt;                                &lt;/div&gt; "
     }, {
     "id": 5,
     "url": "http://localhost:4000/teaching/",
@@ -170,7 +170,7 @@ var documents = [{
     "id": 6,
     "url": "http://localhost:4000/writing/",
     "title": "Writing",
-    "body": "       Blog:     {% for post in paginator. posts %}    {% include main-loop-card. html %}    {% endfor %}                {% if paginator. total_pages &gt; 1 %}              {% if paginator. previous_page %}        &laquo; Prev        {% else %}        &laquo;        {% endif %}        {% for page in (1. . paginator. total_pages) %}        {% if page == paginator. page %}        {{ page }}        {% elsif page == 1 %}        {{ page }}        {% else %}        {{ page }}        {% endif %}        {% endfor %}        {% if paginator. next_page %}        Next &raquo;        {% else %}        &raquo;        {% endif %}            {% endif %}            {% include sidebar-featured. html %}  "
+    "body": "       Posts:     {% for post in paginator. posts %}    {% include main-loop-card. html %}    {% endfor %}                {% if paginator. total_pages &gt; 1 %}              {% if paginator. previous_page %}        &laquo; Prev        {% else %}        &laquo;        {% endif %}        {% for page in (1. . paginator. total_pages) %}        {% if page == paginator. page %}        {{ page }}        {% elsif page == 1 %}        {{ page }}        {% else %}        {{ page }}        {% endif %}        {% endfor %}        {% if paginator. next_page %}        Next &raquo;        {% else %}        &raquo;        {% endif %}            {% endif %}            {% include sidebar-featured. html %}  "
     }, {
     "id": 7,
     "url": "http://localhost:4000/media/",
@@ -322,7 +322,7 @@ function lunr_search(term) {
 				<div class="col-md-12 pl-0 pr-0 pr-md-4 pt-4 pb-4 align-self-center">
 
 					<div class="d-flex align-items-center">
-						<h6 class="text-muted space-mono">Advised by <a href="https://nawab.me/m/">Professor Faisal Nawab</a>; 2022</h6>
+						<h6 class="text-muted domainesanstextlight">Advised by <a href="https://nawab.me/m/">Professor Faisal Nawab</a>; 2022</h6>
 					</div>
 					<div class=" mb-1 mt-2">
 					

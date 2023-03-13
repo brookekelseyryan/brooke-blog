@@ -745,7 +745,7 @@ article {
 .article-subtitle {
 	/*color: #7F7F7F;*/
 	font-weight: 325;
-	font-family: "Space Mono", serif !important;
+	font-family: "Domaine Sans Text Light", serif !important;
 }
 
 article figure img {
@@ -1799,6 +1799,10 @@ canvas{
 
 .img-home{
 	max-width: 100%;
+}
+
+.img-about {
+	max-width: 80%;
 }
 
 body {
