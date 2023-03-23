@@ -28,8 +28,8 @@ authors:
   brooke:
     name: "Brooke K. Ryan"
     avatar: "assets/images/brooke_avatar.jpg"
-    bio: "I'm currently a graduate student at UC Irvine pursuing my master's in Computer Science. My goal is to increase accessibility in Artificial Intelligence and Computer Science more broadly."
-    long_bio: "I'm currently a graduate student at UC Irvine pursuing my master's in Computer Science. My goal is to increase accessibility in Artificial Intelligence and Computer Science more broadly. Generally, I write about things that I wish I knew or things I find important enough to teach or talk about—this can range from topics on introductory software engineering, tutorials related to courses I've taught, navigating tools for neural networks research, and anything in between. I'm also really passionate about helping increase underrepresented groups in Computer Science—whether that's women, queer folks, people of color, or people with disabilities. My goal is to reignite the joy of science and the process of discovery for anyone who has ever thought they weren't good enough to do so!"
+    bio: "I’m a graduate student and researcher in computational cognitive neuroscience. I’m interested in understanding the computational and neural basis of high-level cognition and our uniquely human intelligence."
+    long_bio: ""
     email: brooke.ryan@uci.edu
 
 collections:

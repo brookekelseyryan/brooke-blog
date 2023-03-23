@@ -31,13 +31,13 @@
     <link rel="shortcut icon" type="image/x-icon" href="/assets/images/brooke_ghostie.png">
 
     <!-- Font Awesome Icons -->
-<!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">-->
+    <!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--    Academic Icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
 
-<!--    Font Share-->
+    <!--    Font Share-->
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300&display=swap" rel="stylesheet">
 
     <!-- Google Fonts-->
@@ -46,7 +46,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=DM+Mono:wght@300&family=DM+Serif+Display&family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700;9..144,800&family=Inter:wght@200&family=Lustria&family=Manrope:wght@200;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
-<!--    Adobe Fonts (free w Creative cloud)-->
+    <!--    Adobe Fonts (free w Creative cloud)-->
     <link rel="stylesheet" href="https://use.typekit.net/ybg7eys.css">
 
 
@@ -59,9 +59,9 @@
 
     <!-- Jquery on header to make sure everything works, the rest  of the scripts in footer for fast loading -->
     <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
 
 
 
@@ -70,18 +70,18 @@
 
 </head>
 
-<body class="">
+<body class="body-article">
 
-    <!-- Navbar -->
-    <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+<!-- Navbar -->
+<nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-offwhite fixed-top">
     <div class="container">
         <a class="navbar-brand" href="/index.html">Brooke K. Ryan</a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse collapse" id="navbarColor02" style="">
             <ul class="navbar-nav align-items-center">
-               <!--  Replace menu links here -->
+                <!--  Replace menu links here -->
 
 <li class="nav-item">
 <a class="" href="/index.html">
@@ -89,9 +89,9 @@
 </a>
 </li>
 
-<li class="nav-item">
-<a class="nav-link" href="/about/index.html">About</a>
-</li>
+<!--<li class="nav-item">-->
+<!--<a class="nav-link" href="/about/index.html">About</a>-->
+<!--</li>-->
 
 <li class="nav-item">
     <a class="nav-link" href="/research/index.html">Research</a>
@@ -126,8 +126,8 @@
 <a class="nav-link pr-0" href="/assets/docs/Brooke_Ryan_CV.pdf">CV</a>
 </li>
             </ul>
-<!--            <ul class="navbar-nav ml-auto d-flex align-items-center">-->
-<!--                <script src="/assets/js/lunr.js"></script>
+            <!--            <ul class="navbar-nav ml-auto d-flex align-items-center">-->
+            <!--                <script src="/assets/js/lunr.js"></script>
 
 <script>
 $(function() {
@@ -182,12 +182,12 @@ var documents = [{
     "id": 8,
     "url": "http://localhost:4000/",
     "title": "Home",
-    "body": "  {% if page. url ==  /  %}                                                                                                    welcome!                                              My name is Brooke K. Ryan. I recently obtained my M. S. in Computer Science from UC Irvine, and I'm currently working as a researcher with the Mattar Lab at UC San Diego. Prior to that, I obtained my B. S. in Mathematics-Computer Science from UC San Diego.                                                 I'm interested in uncovering the computational and neural basis for human intelligence—particularly in areas where Artificial Intelligence struggles, such as one-shot learning and language acquisition. This site contains my an archive of my research projects, writing, and courses I've taught.                                                       {% endif %}       Research:     {% assign research = site. publications | concat: site. projects | sort: 'date' | reverse %}    {% for page in research %}    {% if page. hidden != true %}                                  {{ page. title }}        :         {{ page. authors }}                   {{ page. abstract | strip_html | strip_newlines | truncate: 141}}                           {% if page. venue %}          {{ page. venue }}          {% else %}          {{ page. date | date: '%b %Y' }}          {% endif %}                              {% if page. thumbnail %}                                            {% endif %}                          {% include icons. html %}              {% endif %}    {% endfor %}              Publications:               {% for page in site. publications %}                           {{ page. authors_no_links }}. {{ page. title }}. {{ page. venue }}.         &lt;/li&gt;        {% endfor %}      &lt;/ol&gt;    &lt;/div&gt;  &lt;/div&gt;&lt;/div&gt;{% if site. mailchimp-list %}{% endif %}&lt;/div&gt;"
+    "body": "  {% if page. url ==  /  %}                                                                                                    welcome!                                              My name is Brooke K. Ryan, I’m a graduate student and researcher in computational cognitive neuroscience advised by Professor Uri Hasson. I recently graduated with my M. S. in Computer Science from UC Irvine, and I'm currently working as a research assistant with the Mattar Lab at UC San Diego.                                   I’m interested in understanding the computational and neural basis of high-level cognition and our uniquely human intelligence. This site contains my an archive of my research projects, writing, and courses I've taught.                                 &lt;/div&gt;        &lt;/div&gt;      &lt;/div&gt;    &lt;/div&gt;  &lt;/div&gt;  &lt;/div&gt;{% endif %}      Research:     {% assign research = site. publications | concat: site. projects | sort: 'date' | reverse %}    {% for page in research %}    {% if page. hidden != true %}                                  {{ page. title }}        :         {{ page. authors }}                   {{ page. abstract | strip_html | strip_newlines | truncate: 141}}                           {% if page. venue %}          {{ page. venue }}          {% else %}          {{ page. date | date: '%b %Y' }}          {% endif %}                              {% if page. thumbnail %}                                            {% endif %}                          {% include icons. html %}              {% endif %}    {% endfor %}              Publications:               {% for page in site. publications %}                           {{ page. authors_no_links }}. {{ page. title }}. {{ page. venue }}.         &lt;/li&gt;        {% endfor %}      &lt;/ol&gt;    &lt;/div&gt;  &lt;/div&gt;&lt;/div&gt;{% if site. mailchimp-list %}{% endif %}&lt;/div&gt; "
     }, {
     "id": 9,
     "url": "http://localhost:4000/research/",
     "title": "Research",
-    "body": "            Research                                                                                    How do our distinctly human cognitive capabilities arise from the connections between the billions of neurons in the brain? What are the computational properties that enable precise yet generalizable knowledge about the world to be represented amongst neural connections? How does the symphony of internal experience arise from the architectures governing discrete regions of brain function? Such are the questions that fundamentally drive my curiosity and passion for exploring the brain, mind, and artificial representations of intelligence.                     My research leverages computational, behavioral, and neuroimaging techniques aimed at understanding the mechanisms that give rise to our uniquely human cognitive abilities. I am particularly drawn to areas where human intelligence supersedes that of state-of-the-art Artificial Intelligence, such as language acquisition, one-/few-shot learning, memory, and consciousness.                     Below are my past research projects and publications, which additionally span topics including Computer Science education and Deep Learning.                 &lt;/div&gt;      &lt;/div&gt;    &lt;/div&gt;  &lt;/div&gt;&lt;/div&gt;        Publications:       {% for page in site. publications %}      {% include pub-loop-card. html %}      {% endfor %}  Projects:   {% assign projs = site. projects | sort: 'date' | reverse %}  {% for page in projs %}  {% include pub-loop-card. html %}  {% endfor %}              {% include sidebar-scientist. html %}     "
+    "body": "            Research                                                                                    How do our distinctly human cognitive capabilities arise from the connections between the billions of neurons in the brain? What are the computational properties that enable precise yet generalizable knowledge about the world to be represented amongst neural connections? How does the symphony of internal experience arise from the architectures governing discrete regions of brain function? Such are the questions that fundamentally drive my curiosity and passion for exploring the brain, mind, and artificial representations of intelligence.                     My research leverages computational, behavioral, and neuroimaging techniques aimed at understanding the mechanisms that give rise to our uniquely human cognitive abilities. I am particularly interested in leveraging brain-like, high-parameter artificial neural networks, as they are fruitful for utilizing naturalistic, high-dimensional behavioral datasets that are more akin to real-life experience. I also find such models to be interesting due to their potentially mechanistic explanations for how higher-order cognition may arise from the organization of neurons.                     In my current work, I am exploring areas of human intelligence that surpass state-of-the-art artificial intelligence, such as language acquisition, inductive biases in neural architectures, and predicting human behavior in low-data regimes. Below are my past research projects and publications, which additionally span topics including Computer Science education and Computer Vision.                 &lt;/div&gt;      &lt;/div&gt;    &lt;/div&gt;  &lt;/div&gt;&lt;/div&gt;        Publications:       {% for page in site. publications %}      {% include pub-loop-card. html %}      {% endfor %}  Projects:   {% assign projs = site. projects | sort: 'date' | reverse %}  {% for page in projs %}  {% include pub-loop-card. html %}  {% endfor %}              {% include sidebar-scientist. html %}     "
     }, {
     "id": 10,
     "url": "http://localhost:4000/index_backup/",
@@ -293,22 +293,22 @@ function lunr_search(term) {
 <form class="bd-search hidden-sm-down" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
 <input type="text" class="form-control text-small"  id="lunrsearch" name="q" value="" placeholder="Type keyword and enter..."> 
 </form>-->
-<!--            </ul>-->
+            <!--            </ul>-->
         </div>
     </div>
-    </nav>
+</nav>
 
-    <!-- Search Results -->
-    <div id="lunrsearchresults">
-        <ul class="mb-0"></ul>
-    </div>
+<!-- Search Results -->
+<div id="lunrsearchresults">
+    <ul class="mb-0"></ul>
+</div>
 
-    <!-- Content -->
-    <main role="main" class="site-content">
-        
+<!-- Content -->
+<main role="main" class="site-content">
+    
 <canvas id="canvas">Your browser doesn't support canvas</canvas>
 
-<div class="container bg-lightpink">
+<div class="container bg-offwhite">
 
 
 	<div class="container-lg pt-4 pb-4">
@@ -476,7 +476,7 @@ function lunr_search(term) {
 					</div>
 					<div class="col-md-10">		
                         <h5 class="font-weight-bold">Written by Brooke K. Ryan </h5>
-						I'm currently a graduate student at UC Irvine pursuing my master's in Computer Science. My goal is to increase accessibility in Artificial Intelligence and Computer Science more broadly.
+						I’m a graduate student and researcher in computational cognitive neuroscience. I’m interested in understanding the computational and neural basis of high-level cognition and our uniquely human intelligence.
 
 						<div class="pl-0 pr-0 mt-2 col-sm-12 special-baby">
 							<a href="https://github.com/brookekelseyryan" class="btn btn-faicon"><i class="fab fa-github "></i></a>
@@ -560,38 +560,38 @@ function lunr_search(term) {
 
 
 </div>
-    </main>
+</main>
 
 
-    <!-- Scripts: popper, bootstrap, theme, lunr -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<!-- Scripts: popper, bootstrap, theme, lunr -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
-    <script src="/assets/js/theme.js"></script>
+<script src="/assets/js/theme.js"></script>
 
-    <script id="dsq-count-scr" src="//brookekryan.disqus.com/count.js" async></script>
+<script id="dsq-count-scr" src="//brookekryan.disqus.com/count.js" async></script>
 
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 
-    <!-- Footer -->
-    <footer class="bg-white p-3  small " >
-        <div class="container">
+<!-- Footer -->
+<footer class="bg-offwhite p-3  small " >
+    <div class="container">
         <div class="row align-items-center justify-content-between">
             <div>
                 <span class="navbar-brand mr-2 mb-0"><a href="/index.html">Brooke K. Ryan</a></span>
                 <span style="font-family: 'Space Mono', monospace"><a href="https://github.com/brookekelseyryan/brooke-blog">Copyright © <script>document.write(new Date().getFullYear())</script></a>.</span>
 
                 <!--  Github Repo Star Btn-->
-<!--                <a class="text-dark ml-1" target="_blank" href="https://github.com/brookekelseyryan/brooke-blog"><i class="fab fa-github"></i> View on Github</a>-->
+                <!--                <a class="text-dark ml-1" target="_blank" href="https://github.com/brookekelseyryan/brooke-blog"><i class="fab fa-github"></i> View on Github</a>-->
 
             </div>
             <div>
-<!--                <a href="https://github.com/brookekelseyryan" class="btn btn-faicon"><i class="fab fa-github "></i></a>-->
-<!--                <a href="https://linkedin.com/in/bkryan" class="btn btn-faicon"><i class="fab fa-linkedin-in "></i></a>-->
-<!--&lt;!&ndash;                <a href="https://brookekryan.com/Brooke_Ryan_CV.pdf" class="btn btn-faicon"><i class="ai ai-cv ai-1x"></i></a>&ndash;&gt;-->
-<!--                <a href="mailto:brooke.ryan@uci.edu" class="btn btn-faicon"><i class="far fa-envelope "></i></a>-->
+                <!--                <a href="https://github.com/brookekelseyryan" class="btn btn-faicon"><i class="fab fa-github "></i></a>-->
+                <!--                <a href="https://linkedin.com/in/bkryan" class="btn btn-faicon"><i class="fab fa-linkedin-in "></i></a>-->
+                <!--&lt;!&ndash;                <a href="https://brookekryan.com/Brooke_Ryan_CV.pdf" class="btn btn-faicon"><i class="ai ai-cv ai-1x"></i></a>&ndash;&gt;-->
+                <!--                <a href="mailto:brooke.ryan@uci.edu" class="btn btn-faicon"><i class="far fa-envelope "></i></a>-->
                 <a href="https://github.com/brookekelseyryan" class=" btn btn-faicon  fun-icon"><i class="fab fa-github "></i></a>
                 <a href="https://scholar.google.com/citations?&user=E5NlNS0AAAAJ" class=" btn btn-faicon "><i class="ai ai-google-scholar "></i></a>
                 <a href="https://www.linkedin.com/in/brookekryan" class=" btn btn-faicon "><i class="fab fa-linkedin-in "></i></a>
@@ -600,10 +600,10 @@ function lunr_search(term) {
                 <a href="https://medium.com/@brookekryan" class=" btn btn-faicon "><i class="fa-brands fa-medium "></i></a>
             </div>
         </div>
-        </div>
-    </footer>
+    </div>
+</footer>
 
-    <!-- All this area goes before </body> closing tag --> 
+<!-- All this area goes before </body> closing tag --> 
 
 
 </body>

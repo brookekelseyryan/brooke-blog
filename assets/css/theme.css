@@ -1049,7 +1049,17 @@ course table tbody + tbody {
 	padding-top: 20px;
 	border-bottom:1px solid #828884;
 	margin-bottom:1rem;
+	animation-name: showLine;
+	animation-duration: 1.5s;
+	animation-timing-function: ease;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: forwards;
+	animation-play-state: running;
 }
+
+@keyframes showLine{0%{width:0}100%{width:100%}}
 
 .spanborder {
 	border-bottom:1px solid #e8f3ec;
@@ -1061,6 +1071,7 @@ course table tbody + tbody {
 	padding-bottom:5px;
 	margin-bottom:-1px;
 }
+
 .a2a_default_style .a2a_svg {
 	border-radius:50% !important;
 	margin-top:.5rem;

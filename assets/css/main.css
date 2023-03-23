@@ -99,6 +99,10 @@ body {
   background-color: #fef1f1;
 }
 
+.body-article {
+  background-color: #fcfaf6;
+}
+
 [tabindex="-1"]:focus {
   outline: 0 !important; }
 
@@ -5329,6 +5333,10 @@ button.bg-orange:focus {
 .bg-lightblue {
   /*background-color: #F4ECF0 !important; */
   background-color: #cac9b3;
+}
+
+.bg-offwhite {
+  background-color: #fcfaf6;
 }
 
 .bg-lightpink {
