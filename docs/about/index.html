@@ -116,12 +116,17 @@
 <!--</li>-->
 
 <li class="nav-item">
+    <a class="nav-link" href="/about/index.html">About</a>
+</li>
+
+<li class="nav-item">
     <a class="nav-link" href="/assets/docs/Brooke_Ryan_Resume.pdf">Résumé</a>
 </li>
 
 <li class="nav-item">
 <a class="nav-link pr-0" href="/assets/docs/Brooke_Ryan_CV.pdf">CV</a>
 </li>
+
             </ul>
 <!--            <ul class="navbar-nav ml-auto d-flex align-items-center">-->
 <!--                <script src="/assets/js/lunr.js"></script>
@@ -159,7 +164,7 @@ var documents = [{
     "id": 4,
     "url": "http://localhost:4000/about/",
     "title": "About",
-    "body": "                                                                                                    Biography                          Brooke is a PhD student in Psychology. She's interested in characterizing the computational and neural basis for human intelligence—particularly in areas where Artificial Intelligence struggles, such as one-shot learning and language acquisition.                           She originally hails from sunny Southern California; there she obtained her M. S. in Computer Science at UC Irvine and B. S. in Mathematics-Computer Science at UC San Diego. Prior to her graduate studies, Brooke had another career as a Software Engineer, she worked as a backend Java developer for several years Intuit and Blizzard Entertainment.                       &lt;/div&gt;        &lt;/div&gt;      &lt;/div&gt;    &lt;/div&gt;  &lt;/div&gt;                                &lt;/div&gt; "
+    "body": "                                                                                                    Biography                          Brooke is a PhD student in Psychology at Princeton University where she is advised by Professor Uri Hasson. She's interested in understanding the computational and neural basis for human intelligence and higher-order cognition. She originally became fascinated with using brain-like artificial neural networks as cognitive models during her M. S. in Computer Science. Prior to her graduate studies, Brooke worked as a Software Engineer for several years at Intuit and Blizzard Entertainment.                           Brooke originally hails from sunny Southern California; in its forests she found a love of backpacking, in its ocean she learned to surf and scuba dive. She looks forward to exploring the forests near Princeton and watching the seasons change with her chubby tabby cat Kiki in her lap.                       &lt;/div&gt;        &lt;/div&gt;      &lt;/div&gt;    &lt;/div&gt;  &lt;/div&gt;                                &lt;/div&gt; "
     }, {
     "id": 5,
     "url": "http://localhost:4000/teaching/",
@@ -179,7 +184,7 @@ var documents = [{
     "id": 8,
     "url": "http://localhost:4000/",
     "title": "Home",
-    "body": "  {% if page. url ==  /  %}                                                                                                    welcome!                                              My name is Brooke K. Ryan, I’m a graduate student and researcher in computational cognitive neuroscience. I recently graduated with my M. S. in Computer Science from UC Irvine, and I'm currently working as a research assistant with the Mattar Lab at UC San Diego.                                   I’m interested in understanding the computational and neural basis of high-level cognition and our uniquely human intelligence. This site contains my an archive of my research projects, writing, and courses I've taught.                                 &lt;/div&gt;        &lt;/div&gt;      &lt;/div&gt;    &lt;/div&gt;  &lt;/div&gt;  &lt;/div&gt;{% endif %}      Research:     {% assign research = site. publications | concat: site. projects | sort: 'date' | reverse %}    {% for page in research %}    {% if page. hidden != true %}                                  {{ page. title }}        :         {{ page. authors }}                   {{ page. abstract | strip_html | strip_newlines | truncate: 141}}                           {% if page. venue %}          {{ page. venue }}          {% else %}          {{ page. date | date: '%b %Y' }}          {% endif %}                              {% if page. thumbnail %}                                            {% endif %}                          {% include icons. html %}              {% endif %}    {% endfor %}              Publications:               {% for page in site. publications %}                           {{ page. authors_no_links }}. {{ page. title }}. {{ page. venue }}.         &lt;/li&gt;        {% endfor %}      &lt;/ol&gt;    &lt;/div&gt;  &lt;/div&gt;&lt;/div&gt;{% if site. mailchimp-list %}{% endif %}&lt;/div&gt; "
+    "body": "  {% if page. url ==  /  %}                                                                                                    welcome!                                              My name is Brooke K. Ryan, I’m a graduate student and researcher in computational cognitive neuroscience. I'm currently working towards my PhD in Psychology at Princeton University, where I'm advised by Professor Uri Hasson.                                   I’m interested in understanding the computational and neural basis of high-level cognition and our uniquely human intelligence. This site contains my an archive of my research projects, writing, and courses I've taught.                                 &lt;/div&gt;        &lt;/div&gt;      &lt;/div&gt;    &lt;/div&gt;  &lt;/div&gt;  &lt;/div&gt;{% endif %}      Research:     {% assign research = site. publications | concat: site. projects | sort: 'date' | reverse %}    {% for page in research %}    {% if page. hidden != true %}                                  {{ page. title }}        :         {{ page. authors }}                   {{ page. abstract | strip_html | strip_newlines | truncate: 141}}                           {% if page. venue %}          {{ page. venue }}          {% else %}          {{ page. date | date: '%b %Y' }}          {% endif %}                              {% if page. thumbnail %}                                            {% endif %}                          {% include icons. html %}              {% endif %}    {% endfor %}              Publications:               {% for page in site. publications %}                           {{ page. authors_no_links }}. {{ page. title }}. {{ page. venue }}.         &lt;/li&gt;        {% endfor %}      &lt;/ol&gt;    &lt;/div&gt;  &lt;/div&gt;&lt;/div&gt;{% if site. mailchimp-list %}{% endif %}&lt;/div&gt; "
     }, {
     "id": 9,
     "url": "http://localhost:4000/research/",
@@ -312,18 +317,17 @@ function lunr_search(term) {
                 <div class="row  justify-content-between ">
                     <div class=" col-md-6  pr-0 pr-md-4 pt-4 pb-4 align-self-center">
                         <div>
-                            <img src="/assets/images/LACMA.png" alt="Brooke K. Ryan" class="img-about">
+                            <img src="/assets/images/about.JPG" alt="Brooke K. Ryan" class="img-about">
                         </div>
                     </div>
 
                     <div class="col-md-6 pr-0 align-self-center">
                         <h1 class=" domainedisplay spanborder-research">Biography</h1>
                         <p class="mt-4 mb-4 domainesanstextlight justify-research font-weight-light">
-                            Brooke is a PhD student in Psychology. She's interested in characterizing the computational and neural basis for human intelligence—particularly in areas where Artificial Intelligence struggles, such as one-shot learning and language acquisition.
+                            Brooke is a PhD student in Psychology at Princeton University where she is advised by Professor Uri Hasson. She's interested in understanding the computational and neural basis for human intelligence and higher-order cognition. She originally became fascinated with using brain-like artificial neural networks as cognitive models during her M.S. in Computer Science. Prior to her graduate studies, Brooke worked as a Software Engineer for several years at Intuit and Blizzard Entertainment.
                         <p class="mt-4 mb-4 domainesanstextlight justify-research">
 
-                            She originally hails from sunny Southern California; there she obtained her M.S. in Computer Science at UC Irvine and B.S. in Mathematics-Computer Science at UC San Diego. Prior to her graduate studies, Brooke had another career as a Software Engineer, she worked as a backend Java developer for several years Intuit and Blizzard Entertainment.
-
+                            Brooke originally hails from sunny Southern California; in its forests she found a love of backpacking, in its ocean she learned to surf and scuba dive. She looks forward to exploring the forests near Princeton and watching the seasons change with her chubby tabby cat Kiki in her lap.
 
                         </p>
 
